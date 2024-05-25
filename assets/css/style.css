@@ -1,0 +1,233 @@
+/* GLOBAL Styles >> */
+
+* {
+  margin:0;
+  padding:0;  
+}
+
+body {
+  position: relative;
+  font-family: sans-serif;
+}
+
+header {
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+}
+
+footer {
+  /* https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 1vh;
+  width: 100%;
+  background-color: rgb(110, 110, 233);
+  color: white;
+  text-align: center;
+}
+
+
+/* HEADER Styles >> */
+
+.home-header {
+  padding-top: 2vh;
+  background-color:  rgb(110, 110, 233);
+  border-bottom: 1vh solid rgb(0, 0, 127);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.logo {
+  float: left;
+  background-color: orange;
+}
+
+
+/* NAV ICON Animation >> */
+/* https://codepen.io/kowshikkuri/pen/vPebdy */
+
+.trigger {
+    /* position: absolute; */
+    float: right;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    border: 2px solid white;
+    border-radius: 15px; /* Menu Icon border corner rounding */
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.bars {
+  width: 40px; /* Menu Icon size */
+  cursor: pointer;
+}
+
+.active {
+  float: right;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  border: 2px solid white;
+  background-color: white;
+  color: red; /* WHAT DOES THIS DO?! */
+  border-radius: 10px; /* Menu Icon border corner rounding */
+}
+
+.bars .line {
+  fill: none;
+  /* stroke: #fff; */
+  stroke: white;
+  stroke-width: 4;
+  stroke-linecap: square;
+  transition: stroke-dasharray 400ms,  stroke-dashoffset 400ms;
+}
+
+.bars .line.top {
+  stroke-dasharray: 40 172;
+}
+
+.bars .line.middle {
+  stroke-dasharray: 40 111;
+}
+
+.bars .line.bottom {
+  stroke-dasharray: 40 172;
+}
+
+.bars.active .top {
+  stroke-width: 6;
+  stroke-dashoffset: -132px;
+  stroke: rgb(110, 110, 233);
+}
+
+.bars.active .middle {
+  stroke-width: 6;
+  stroke-dashoffset: -71px;
+  stroke: rgb(110, 110, 233);
+}
+
+.bars.active .bottom {
+  stroke-width: 6;
+  stroke-dashoffset: -132px;
+  stroke: rgb(110, 110, 233);
+}
+
+
+/* HEADER IMAGE Styles */
+
+/* .banner-image { */
+  /* <a href="https://www.freepik.com/free-vector/rainbow-gradient-curve-frame-template_14547796.htm#query=background%20design&position=45&from_view=keyword&track=ais_user&uuid=545cdecb-caae-4934-a353-4f2a69ccc496">Image by rawpixel.com</a> on Freepik */
+  /* height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("/assets/images/rm222batch2-mind-03.jpg");
+  background-size: cover;
+  background-position: center;
+} */
+
+
+/* MAIN Styles >>  */
+/* MAIN MARGIN PUSHES DOWN HEADER, HAVE TO USE PADDING  */
+
+main {
+  /* https://css-tricks.com/couple-takes-sticky-footer/ */
+  height: 100vh;
+  padding-top: 6vh;
+  flex: 1 0 auto;
+  background-image: linear-gradient(to bottom right, rgb(173, 216, 230,0), rgb(81, 194, 232,.5), rgba(24, 184, 238, 0.75), rgb(110, 110, 233)); /* https://www.w3schools.com/css/css3_gradients.asp */
+}
+
+.home-caption {
+  margin-top: 25vh;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+}
+
+.blink_text{	
+  animation-name:blink;
+  width:280px;
+  animation-duration:8s;
+  animation-timing-function:ease-in;
+  animation-iteration-count:Infinite;
+}
+
+@keyframes blink {
+  0%{color: rgb(110, 110, 233);}
+  50%{color:white;}
+  100%{color:lightblue;}
+}
+
+.blink-class-1 {
+  animation: blink 5s linear infinite;
+}
+
+@keyframes blink-class-1 {
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+}
+
+.blink-class-2 {
+  animation: blink 5s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes blink-class-2 {
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+}
+
+
+/* SITE NAV Styles >> */
+
+.site-nav {
+  overflow: hidden;
+  /* background-color: aqua; */
+  position: relative;
+  text-align: center;
+}
+
+.site-nav #siteLinks {
+  display: none; /* Hides Navigation Menu until navMenuDisplay() is called */
+}
+
+.site-nav a {
+  color: green;
+  padding: 25px 20px;
+  text-decoration: none;
+  font-size: 40px;
+  display: block;
+}
+
+.site-nav a.icon {
+  background: black;
+  display: block;
+  /* position: absolute; */
+  float: right;
+  right: 0;
+  top: 0;
+}
+
+.site-nav a:hover {
+  /* background-color: pink; */
+  color: blue;
+  font-size: 80px;
+}
+
