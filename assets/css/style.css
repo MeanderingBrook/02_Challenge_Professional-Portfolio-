@@ -32,9 +32,14 @@ footer {
 /* HEADER Styles >> */
 
 .home-header {
-  padding-top: 2vh;
-  background-color:  rgb(110, 110, 233);
-  border-bottom: 1vh solid rgb(0, 0, 127);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1vh;
+  /* background-color:  rgb(110, 110, 233, 0.5); */
+  background-image: linear-gradient(to right, aliceblue, rgb(173, 216, 230,0), rgb(110, 110, 233,1.0));
+  border-bottom: 1.0vh solid rgb(0, 0, 127);
   color: rgb(255, 255, 255);
   text-align: center;
 }
@@ -44,13 +49,25 @@ footer {
   background-color: orange;
 }
 
+.paintbrush {
+  margin-left: 2vw;
+  /* border: 5px solid rgb(0, 0, 127); */
+}
 
 /* NAV ICON Animation >> */
 /* https://codepen.io/kowshikkuri/pen/vPebdy */
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar */
+/* https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
+/* https://www.w3schools.com/howto/howto_css_menu_icon.asp */
+/* https://freefrontend.com/css-hamburger-menu-icons/ */
+/* https://www.hostinger.com/tutorials/web-developer-portfolio */
+/* https://itssharl.ee */
+/* https://www.hostinger.com/tutorials/about-me-page-examples */
 
 .trigger {
     /* position: absolute; */
-    float: right;
+    /* float: right; */
+    margin-top: 5vh;
     z-index: 2;
     left: 50%;
     top: 50%;
@@ -133,10 +150,11 @@ footer {
 
 main {
   /* https://css-tricks.com/couple-takes-sticky-footer/ */
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 6vh;
+  margin-bottom: 3vh;
   flex: 1 0 auto;
-  background-image: linear-gradient(to bottom right, rgb(173, 216, 230,0), rgb(81, 194, 232,.5), rgba(24, 184, 238, 0.75), rgb(110, 110, 233)); /* https://www.w3schools.com/css/css3_gradients.asp */
+  background-image: linear-gradient(to bottom right, rgb(173, 216, 230,0.0), rgb(81, 194, 232,0.10), rgba(58, 185, 227, 0.25), rgba(24, 184, 238, 0.50), rgb(110, 110, 233,0.75)); /* https://www.w3schools.com/css/css3_gradients.asp */
 }
 
 .home-caption {
@@ -145,52 +163,60 @@ main {
   position: relative;
   text-align: center;
   font-size: 40px;
+  color: rgb(0, 0, 127);
 }
 
-.blink_text{	
-  animation-name:blink;
-  width:280px;
-  animation-duration:8s;
-  animation-timing-function:ease-in;
-  animation-iteration-count:Infinite;
-}
 
 @keyframes blink {
-  0%{color: rgb(110, 110, 233);}
-  50%{color:white;}
-  100%{color:lightblue;}
+  0%{color:white;}
+  25%{color:rgb(173, 216, 230);}
+  50%{color:rgb(118, 200, 227);}
+  75%{color:rgb(60, 182, 223);}
+  100%{color: rgb(110, 110, 233);}
 }
 
-.blink-class-1 {
-  animation: blink 5s linear infinite;
+.blink-1 {
+  animation: blink 5s ease-in infinite;
 }
 
-@keyframes blink-class-1 {
-  25% {
-    opacity: 0.5;
+.blink-2 {
+  animation: blink 5s ease-in infinite;
+  animation-delay: 2.5s;
+}
+
+.bounce {
+  animation: bounce 1s ease-in infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
   }
   50% {
-    opacity: 0;
+    transform: translateY(-100px);
   }
-  75% {
-    opacity: 0.5;
+  100% {
+    transform: translateY(0);
   }
 }
 
-.blink-class-2 {
-  animation: blink 5s linear infinite;
-  animation-delay: 0.5s;
+.fade-in {
+  /* https://stackoverflow.com/questions/71550021/is-there-a-way-to-animate-appearing-text-in-html-css */
+  animation: fade-in 5s linear forwards;
 }
 
-@keyframes blink-class-2 {
-  25% {
-    opacity: 0.5;
+@keyframes fade-in {
+  0% {
+    width: 0px;
+    height: 0px;
   }
   50% {
-    opacity: 0.0;
+    width: 20px;
+    height: 20px;
   }
-  75% {
-    opacity: 0.5;
+  100% {
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -199,21 +225,21 @@ main {
 
 .site-nav {
   overflow: hidden;
-  /* background-color: aqua; */
   position: relative;
   text-align: center;
 }
 
-.site-nav #siteLinks {
+.site-nav #site-links {
   display: none; /* Hides Navigation Menu until navMenuDisplay() is called */
 }
 
 .site-nav a {
-  color: green;
+  display: block;
   padding: 25px 20px;
   text-decoration: none;
   font-size: 40px;
-  display: block;
+  /* color: rgb(175,238,238); */
+  color: rgb(110, 110, 233);
 }
 
 .site-nav a.icon {
@@ -227,7 +253,21 @@ main {
 
 .site-nav a:hover {
   /* background-color: pink; */
-  color: blue;
+  color: rgb(0, 0, 128);
   font-size: 80px;
+  text-decoration-line: underline;
+  text-decoration-color: currentColor;
+  text-decoration-style: solid;
 }
 
+.about-section {
+  display: none;
+}
+
+.projects-section {
+  display: none;
+}
+
+.contact-section {
+  display: none;
+}
