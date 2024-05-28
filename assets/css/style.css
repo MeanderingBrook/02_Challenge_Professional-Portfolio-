@@ -23,7 +23,8 @@ footer {
   bottom: 0;
   padding: 1vh;
   width: 100%;
-  background-color: rgb(110, 110, 233);
+  background-color: rgb(0, 0, 127);
+  border-top: 0.25vh solid aliceblue;
   color: white;
   text-align: center;
 }
@@ -38,19 +39,19 @@ footer {
   align-items: center;
   padding-top: 1vh;
   /* background-color:  rgb(110, 110, 233, 0.5); */
-  background-image: linear-gradient(to right, aliceblue, rgb(173, 216, 230,0), rgb(110, 110, 233,1.0));
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(240, 248, 255), rgb(173, 216, 230,0), rgb(173, 216, 230,0), rgb(110, 110, 233,1.0), rgb(0, 0, 127));
   border-bottom: 1.0vh solid rgb(0, 0, 127);
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */ /* Overridden at Span */
   text-align: center;
 }
 
-.logo {
+/* .logo {
   float: left;
   background-color: orange;
-}
+} */
 
 .paintbrush {
-  margin-left: 2vw;
+  margin-left: 3vw;
   /* border: 5px solid rgb(0, 0, 127); */
 }
 
@@ -146,45 +147,73 @@ footer {
 
 
 /* MAIN Styles >>  */
-/* MAIN MARGIN PUSHES DOWN HEADER, HAVE TO USE PADDING  */
 
 main {
   /* https://css-tricks.com/couple-takes-sticky-footer/ */
   min-height: 100vh;
-  padding-top: 6vh;
+  padding-top: 6vh;  /* MAIN SECTION MARGIN PUSHES DOWN HEADER, HAVE TO USE PADDING  */
   margin-bottom: 3vh;
   flex: 1 0 auto;
-  background-image: linear-gradient(to bottom right, rgb(173, 216, 230,0.0), rgb(81, 194, 232,0.10), rgba(58, 185, 227, 0.25), rgba(24, 184, 238, 0.50), rgb(110, 110, 233,0.75)); /* https://www.w3schools.com/css/css3_gradients.asp */
+  background-image: linear-gradient(to bottom right, rgb(240, 248, 255,1), rgb(173, 216, 230,0.05), rgb(81, 194, 232,0.10), rgba(58, 185, 227, 0.10), rgba(24, 184, 238, 0.25), rgb(110, 110, 233,0.65)); /* https://www.w3schools.com/css/css3_gradients.asp */
 }
 
 .home-caption {
-  margin-top: 25vh;
+  margin-top: 30vh;
+  margin-left: 30vw;
   overflow: hidden;
   position: relative;
-  text-align: center;
+  text-align: left;
   font-size: 40px;
   color: rgb(0, 0, 127);
 }
 
-
-@keyframes blink {
+@keyframes blink-cursor {
   0%{color:white;}
-  25%{color:rgb(173, 216, 230);}
-  50%{color:rgb(118, 200, 227);}
-  75%{color:rgb(60, 182, 223);}
-  100%{color: rgb(110, 110, 233);}
+  20%{color:rgb(173, 216, 230);}
+  40%{color:rgb(118, 200, 227);}
+  60%{color:rgb(60, 182, 223);}
+  80%{color: rgb(110, 110, 233);}
+  90%{color: rgb(0, 0, 127);}
+  100%{color:white;}
 }
 
-.blink-1 {
-  animation: blink 5s ease-in infinite;
+.blink-cursor-1 {
+  animation: blink-cursor 5s ease-in infinite;
 }
 
-.blink-2 {
-  animation: blink 5s ease-in infinite;
+.blink-cursor-2 {
+  animation: blink-cursor 5s ease-in infinite;
   animation-delay: 2.5s;
 }
 
-.bounce {
+.dev-summary {
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 4vh;
+  margin-left: 0vw;
+  text-align: left;
+  font-size: 20px;
+}
+
+/* INCREASE SIZE OF TEXT ON HOVER WITHOUT FONT-SIZE OR SHIFTING ELEMENTS */
+/* .dev-summary p:hover{
+  -webkit-transform: scale(1.2);
+} */
+
+.text-gradient {
+  /* https://www.geeksforgeeks.org/how-to-create-linear-gradient-text-using-html-and-css/ */
+  /* background: linear-gradient(to right, rgb(0, 0, 127), rgb(0, 0, 127), rgb(0, 0, 127), rgb(0, 0, 127), rgb(0, 0, 127), rgb(110, 110, 233), rgb(110, 110, 233), rgb(110, 110, 233), rgb(110, 110, 233), rgb(110, 110, 233), rgb(60, 182, 223), rgb(60, 182, 223), rgb(173, 216, 230), rgb(60, 182, 223), rgb(110, 110, 233), rgb(110, 110, 233), rgb(0, 0, 127)); */
+  background: linear-gradient(to right, rgb(0, 0, 127), rgb(0, 0, 127), rgb(0, 0, 127), rgb(0, 0, 127), rgb(0, 0, 127), rgb(110, 110, 233), rgb(110, 110, 233), rgb(110, 110, 233), rgb(110, 110, 233), rgb(110, 110, 233), rgb(60, 182, 223), rgb(60, 182, 223), rgb(173, 216, 230), rgb(173, 216, 230), rgb(173, 216, 230), rgb(173, 216, 230), aliceblue);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+/* .scroll-text {
+  https://blog.hubspot.com/website/scrolling-text-css#:~:text=CSS%20Horizontal%20Scrolling%20Text%3A%20Right,and%20output%20are%20shown%20below.
+} */
+
+
+/* .bounce {
   animation: bounce 1s ease-in infinite;
 }
 
@@ -201,7 +230,7 @@ main {
 }
 
 .fade-in {
-  /* https://stackoverflow.com/questions/71550021/is-there-a-way-to-animate-appearing-text-in-html-css */
+  https://stackoverflow.com/questions/71550021/is-there-a-way-to-animate-appearing-text-in-html-css
   animation: fade-in 5s linear forwards;
 }
 
@@ -218,7 +247,7 @@ main {
     width: 100px;
     height: 100px;
   }
-}
+} */
 
 
 /* SITE NAV Styles >> */
@@ -253,21 +282,63 @@ main {
 
 .site-nav a:hover {
   /* background-color: pink; */
+  content: "";
+  width: 50%;
   color: rgb(0, 0, 128);
   font-size: 80px;
-  text-decoration-line: underline;
+  text-align: right;
+  /* text-decoration-line: underline;
   text-decoration-color: currentColor;
-  text-decoration-style: solid;
+  text-decoration-style: solid; */
+  /* box-sizing: border-box; content-box; */  /* https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+  border-bottom: 1rem solid rgb(0, 0, 128, 0.75);
 }
 
 .about-section {
   display: none;
+  padding-left: 25vw;
+  font-size: 20px;
+  color: rgb(0, 0, 127);
+}
+
+.about-section h2 {
+  font-size: 40px;
+}
+
+.about-section p {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 0vw;
+  padding-right: 3vw;
+  color: rgb(0, 0, 127,0.60);  
+}
+
+@keyframes blink-text {
+  0%{color:white;}
+  20%{color:rgb(173, 216, 230);}
+  40%{color:rgb(118, 200, 227);}
+  60%{color:rgb(60, 182, 223);}
+  80%{color: rgb(110, 110, 233);}
+  90%{color: rgb(0, 0, 127);}
+  100%{color:white;}
+}
+
+.blink-text {
+  animation: blink-cursor 5s ease-in infinite;
 }
 
 .projects-section {
   display: none;
 }
 
+.projects-section h2 {
+  font-size: 40px;
+}
+
 .contact-section {
   display: none;
+}
+
+.contact-section h2 {
+  font-size: 40px;
 }

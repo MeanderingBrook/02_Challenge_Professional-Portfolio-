@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> Fa Fa-Bars Deprecated for JavaScript-driven Nav Icon -->
+  <link rel="icon" type="image/x-icon" href="./assets/images/Paintbrush.png">
   <script src="/js/script.js"></script>
   <title>Milazzo | Developer</title>
 </head>
@@ -13,19 +14,14 @@
 
   <header class="home-header">
 
-    <!-- <div class="logo">
-      <a href="#home" class="logo">Logo</a>
-    </div> -->
-
-    <!-- <a href="#dev-name" class="logo">Logo</a> -->
     <div class="paintbrush">
       <a href="javascript:void(0);" onclick="homeReload()">
-        <img src="./assets/images/Paintbrush.png" alt="Paintbrush Swirling Paint" style="width:80px;height:50px;">
+        <img src="./assets/images/Paintbrush.png" alt="Paintbrush Swirling Paint" style="width:90px;height:60px;">
       </a>
     </div>
 
     <div>
-      <h1><span style="color: rgb(0, 0, 127);">Design &nbsp; |</span> &nbsp; <span style="color: rgb(110, 110, 233);">Full-Stack Development &nbsp; |</span> &nbsp; UI / UX</h1>
+      <h1><span style="color: rgb(0, 0, 127);">Product &nbsp; |</span> &nbsp; <span style="color: rgb(0, 0, 127);">Full-Stack Development</span><span style="color: rgb(255, 255, 255);"> &nbsp; | &nbsp; Strategy</span></h1>
     </div>
 
     <div class="trigger">
@@ -48,14 +44,23 @@
 
     <section class="home-caption">
       <div id="dev-name">
-        <p>Chris Milazzo &nbsp; <span class="blink-1">></span> <span class="blink-2">></span> &nbsp;</p>
-        <p>Full-Stack Developer</p>
+        <p>Chris Milazzo &nbsp;<span class="blink-cursor-1">></span> <span class="blink-cursor-2">></span> &nbsp;</p>
+        <div class="dev-summary">
+          <a href="javascript:void(0);" style="text-decoration:none" onclick="navMenuDisplay()">
+            <p> <span class="text-gradient"><b>Full-Stack</b> Developer</span> &nbsp; <span>&#8226;</span> &nbsp; 
+                <span class="text-gradient"><b>Product</b> Manager</span> &nbsp; <span>&#8226;</span> &nbsp; 
+                <span class="text-gradient"><b>Technology</b> Strategist</span> &nbsp; <span>&#8226;</span> &nbsp; 
+                <span class="text-gradient"><b>Finance</b> Manager</span> &nbsp; <span>&#8226;</span> &nbsp; 
+                <span class="text-gradient"><b>Program</b> Manager</span> &nbsp; 
+            </p>
+          </a>
+        </div>
       </div>
     </section>
 
     <section class="site-nav">
       <div id="site-links">
-        <div>
+        <div class="site-nav-links">
           <a href="javascript:void(0);" onclick="homeDisplay()">
             <p>Home</p>
           </a>
@@ -82,12 +87,17 @@
     </section>
 
     <section class="about-section" id="about">
-      <h3>About</h3>
-        <div>1 yadda yadda yadda</div>
-        <div>2 yadda yadda yadda</div>
-        <div>3 yadda yadda yadda</div>
-        <div>4 yadda yadda yadda</div>
-        <div>5 yadda yadda yadda</div>
+      <h2>About</h2>
+        <div>
+          <p>Good fortune has taken me around the world and across the country in a varied career to...</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 128, 0,1.0);">Africa &nbsp; &#8226;</span> &nbsp; <span style="color: rgb(165, 42, 42,1.0);">Australia &nbsp; &#8226;</span> &nbsp; <span style="color: rgb(255, 0, 0,1.0);">Italy &nbsp; &#8226;</span> &nbsp; <span style="color: rgb(0, 0, 255,1.0);">Russia &nbsp; &#8226;</span> &nbsp; <span style="color: rgb(0, 0, 127,1.0);">D.C., San Francisco, Boston</span></p>
+          <p>My work began in Finance, and quickly incorporated Technology and Program Management while abroad.</p>
+          <p>A return to the States brought a renewed focus on Finance and introduced Application Product Management to my portfolio.</p>
+          <p>From an early stage in my career I've known enough <code class="blink-text">coding</code> to be dangerous -- mostly to myself, but occassionaly to innocent apps.</p>
+          <p>Of late, my priority has been Strategic Technology and diving deeply into Full-Stack Development.</p>
+        </div>
+
+        <div>blah blah blah</div>
     </section>
 
     <section class="projects-section" id="projects">
