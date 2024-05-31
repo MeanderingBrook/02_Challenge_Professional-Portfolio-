@@ -8,51 +8,35 @@
 body {
   position: relative;
   font-family: sans-serif;
-}
-
-header {
-  position: fixed;
-  height: 10vh;
-  width: 100%;
-}
-
-footer {
-  /* https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  padding: 1vh;
-  width: 100%;
-  background-color: rgb(0, 0, 127);
-  border-top: 0.25vh solid aliceblue;
-  color: white;
-  text-align: center;
+  cursor: url('/assets/images/Cursor_Circle_Open.png'), auto;
+  a:hover {
+    /* cursor: url('/assets/images/Cursor_Circle_Closed.png') 15 15, auto; https://css-tricks.com/almanac/properties/c/cursor/ */
+    cursor: url('/assets/images/Cursor_Third-Eye.png'), auto;
+  }
 }
 
 
 /* HEADER Styles >> */
 
-.home-header {
+.header {
+  top: 0vh;
+  position: fixed;
+  height: 10vh;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-top: 1vh;
-  /* background-color:  rgb(110, 110, 233, 0.5); */
-  background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(240, 248, 255), rgb(173, 216, 230,0), rgb(173, 216, 230,0), rgb(110, 110, 233,1.0), rgb(0, 0, 127));
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(240, 248, 255, 1.0), rgb(173, 216, 230, 0.10), rgb(173, 216, 230, 0.25), rgb(110, 110, 233,0.50), rgb(110, 110, 233, 1.0), rgb(0, 0, 127, 1.0));
   border-bottom: 1.0vh solid rgb(0, 0, 127);
-  /* color: rgb(255, 255, 255); */ /* Overridden at Span */
   text-align: center;
 }
 
-/* .logo {
-  float: left;
-  background-color: orange;
-} */
-
 .paintbrush {
-  margin-left: 3vw;
+  margin-left: 2.0vw;
   /* border: 5px solid rgb(0, 0, 127); */
+  box-shadow: 5px 2px 10px 10px rgb(246, 250, 253);
 }
 
 /* NAV ICON Animation >> */
@@ -66,8 +50,6 @@ footer {
 /* https://www.hostinger.com/tutorials/about-me-page-examples */
 
 .trigger {
-    /* position: absolute; */
-    /* float: right; */
     margin-top: 5vh;
     z-index: 2;
     left: 50%;
@@ -80,6 +62,11 @@ footer {
 .bars {
   width: 40px; /* Menu Icon size */
   cursor: pointer;
+}
+
+.bars:hover {
+  /* cursor: url('/assets/images/Cursor_Circle_Closed.png')15 15, auto; */
+  cursor: url('/assets/images/Cursor_Third-Eye.png') 5 5, auto; /* https://icons8.com/icon/set/pointing-triangle/group-ui */
 }
 
 .active {
@@ -95,7 +82,6 @@ footer {
 
 .bars .line {
   fill: none;
-  /* stroke: #fff; */
   stroke: white;
   stroke-width: 4;
   stroke-linecap: square;
@@ -133,32 +119,29 @@ footer {
 }
 
 
-/* HEADER IMAGE Styles */
+/* HOME Page Styles */
 
-/* .banner-image { */
-  /* <a href="https://www.freepik.com/free-vector/rainbow-gradient-curve-frame-template_14547796.htm#query=background%20design&position=45&from_view=keyword&track=ais_user&uuid=545cdecb-caae-4934-a353-4f2a69ccc496">Image by rawpixel.com</a> on Freepik */
-  /* height: 200px;
-  width: 100%;
-  margin-bottom: 25px;
-  background-image: url("/assets/images/rm222batch2-mind-03.jpg");
-  background-size: cover;
-  background-position: center;
-} */
+/* MAIN Styles: Home >>  */
 
-
-/* MAIN Styles >>  */
-
-main {
-  /* https://css-tricks.com/couple-takes-sticky-footer/ */
+.main_home {
   min-height: 100vh;
-  padding-top: 6vh;  /* MAIN SECTION MARGIN PUSHES DOWN HEADER, HAVE TO USE PADDING  */
+  margin-top: 5vh;
   margin-bottom: 3vh;
+  padding-top: 1vh;
   flex: 1 0 auto;
-  background-image: linear-gradient(to bottom right, rgb(240, 248, 255,1), rgb(173, 216, 230,0.05), rgb(81, 194, 232,0.10), rgba(58, 185, 227, 0.10), rgba(24, 184, 238, 0.25), rgb(110, 110, 233,0.65)); /* https://www.w3schools.com/css/css3_gradients.asp */
+  /* https://blog.hubspot.com/website/css-fade-in#text-transition */
+  /* animation: fadePage 10s;
+  animation-fill-mode: forwards; */
+  background-image: linear-gradient(to bottom right, rgb(240, 248, 255,1), rgb(173, 216, 230,0.15), rgb(81, 194, 232,0.10), rgba(58, 185, 227, 0.10), rgba(24, 184, 238, 0.15), rgb(110, 110, 233,0.35), rgb(0, 0, 127,0.65));
 }
 
-.home-caption {
-  margin-top: 30vh;
+/* @keyframes fadePage {
+  from { background-image: white; }
+  to { background-image: linear-gradient(to bottom right, rgb(240, 248, 255,1), rgb(173, 216, 230,0.10), rgb(81, 194, 232,0.10), rgba(58, 185, 227, 0.15), rgba(24, 184, 238, 0.25), rgb(110, 110, 233,0.40), rgb(0, 0, 127,0.65)); }
+} */
+
+.home {
+  margin-top: 20vh;
   margin-left: 30vw;
   overflow: hidden;
   position: relative;
@@ -192,7 +175,7 @@ main {
   margin-top: 4vh;
   margin-left: 0vw;
   text-align: left;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 /* INCREASE SIZE OF TEXT ON HOVER WITHOUT FONT-SIZE OR SHIFTING ELEMENTS */
@@ -201,17 +184,46 @@ main {
 } */
 
 .text-gradient {
-  /* https://www.geeksforgeeks.org/how-to-create-linear-gradient-text-using-html-and-css/ */
-  /* background: linear-gradient(to right, rgb(0, 0, 127), rgb(0, 0, 127), rgb(0, 0, 127), rgb(0, 0, 127), rgb(0, 0, 127), rgb(110, 110, 233), rgb(110, 110, 233), rgb(110, 110, 233), rgb(110, 110, 233), rgb(110, 110, 233), rgb(60, 182, 223), rgb(60, 182, 223), rgb(173, 216, 230), rgb(60, 182, 223), rgb(110, 110, 233), rgb(110, 110, 233), rgb(0, 0, 127)); */
-  background: linear-gradient(to right, rgb(0, 0, 127), rgb(0, 0, 127), rgb(0, 0, 127), rgb(0, 0, 127), rgb(0, 0, 127), rgb(110, 110, 233), rgb(110, 110, 233), rgb(110, 110, 233), rgb(110, 110, 233), rgb(110, 110, 233), rgb(60, 182, 223), rgb(60, 182, 223), rgb(173, 216, 230), rgb(173, 216, 230), rgb(173, 216, 230), rgb(173, 216, 230), aliceblue);
+  background: linear-gradient(to right, rgb(0, 0, 127), rgb(0, 0, 127), rgb(0, 0, 127), rgb(0, 0, 127), rgb(0, 0, 127), rgb(0, 0, 127), rgb(110, 110, 233), rgb(110, 110, 233), rgb(110, 110, 233), rgb(110, 110, 233), rgb(110, 110, 233), rgb(60, 182, 223), rgb(60, 182, 223), rgb(173, 216, 230), rgb(173, 216, 230), rgb(173, 216, 230), rgb(173, 216, 230), aliceblue);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.fade-in-text-1 {
+  animation: fadeIn 25s ease-in infinite;
+}
+
+.fade-in-text-2 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 5s;
+}
+
+.fade-in-text-3 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 10s;
+}
+
+.fade-in-text-4 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 15s;
+}
+
+.fade-in-text-5 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 20s;
 }
 
 /* .scroll-text {
   https://blog.hubspot.com/website/scrolling-text-css#:~:text=CSS%20Horizontal%20Scrolling%20Text%3A%20Right,and%20output%20are%20shown%20below.
 } */
-
 
 /* .bounce {
   animation: bounce 1s ease-in infinite;
@@ -228,26 +240,6 @@ main {
     transform: translateY(0);
   }
 }
-
-.fade-in {
-  https://stackoverflow.com/questions/71550021/is-there-a-way-to-animate-appearing-text-in-html-css
-  animation: fade-in 5s linear forwards;
-}
-
-@keyframes fade-in {
-  0% {
-    width: 0px;
-    height: 0px;
-  }
-  50% {
-    width: 20px;
-    height: 20px;
-  }
-  100% {
-    width: 100px;
-    height: 100px;
-  }
-} */
 
 
 /* SITE NAV Styles >> */
@@ -267,66 +259,28 @@ main {
   padding: 25px 20px;
   text-decoration: none;
   font-size: 40px;
-  /* color: rgb(175,238,238); */
   color: rgb(110, 110, 233);
 }
 
 .site-nav a.icon {
   background: black;
   display: block;
-  /* position: absolute; */
   float: right;
   right: 0;
   top: 0;
 }
 
 .site-nav a:hover {
-  /* background-color: pink; */
   content: "";
   width: 50%;
   color: rgb(0, 0, 128);
   font-size: 80px;
   text-align: right;
-  /* text-decoration-line: underline;
-  text-decoration-color: currentColor;
-  text-decoration-style: solid; */
-  /* box-sizing: border-box; content-box; */  /* https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
   border-bottom: 1rem solid rgb(0, 0, 128, 0.75);
 }
 
-.about-section {
-  display: none;
-  padding-left: 25vw;
-  font-size: 20px;
-  color: rgb(0, 0, 127);
-}
 
-.about-section h2 {
-  font-size: 40px;
-}
-
-.about-section p {
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  padding-left: 0vw;
-  padding-right: 3vw;
-  color: rgb(0, 0, 127,0.60);  
-}
-
-@keyframes blink-text {
-  0%{color:white;}
-  20%{color:rgb(173, 216, 230);}
-  40%{color:rgb(118, 200, 227);}
-  60%{color:rgb(60, 182, 223);}
-  80%{color: rgb(110, 110, 233);}
-  90%{color: rgb(0, 0, 127);}
-  100%{color:white;}
-}
-
-.blink-text {
-  animation: blink-cursor 5s ease-in infinite;
-}
-
+/* DEPRECATED!!!! FOR INDIVIDUAL PAGES */
 .projects-section {
   display: none;
 }
@@ -342,3 +296,163 @@ main {
 .contact-section h2 {
   font-size: 40px;
 }
+
+
+/* FOOTER Styles >>  */
+
+.footer {
+  /* https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
+  /* https://css-tricks.com/couple-takes-sticky-footer/ */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 1vh;
+  width: 100%;
+  background-color: rgb(0, 0, 127);
+  color: white;
+  text-align: center;
+  border-top: 0.25vh solid aliceblue;
+}
+
+
+/* ABOUT Page Styles */
+
+/* MAIN Styles: About >>  */
+
+.main_about {
+  min-height: 100vh;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+  padding-top: 1vh;
+  flex: 1 0 auto;
+  /* https://blog.hubspot.com/website/css-fade-in#text-transition */
+  /* animation: fadePage 10s;
+  animation-fill-mode: forwards; */
+  background-image: linear-gradient(to bottom right, rgb(240, 248, 255,1), rgb(173, 216, 230,0.15), rgb(81, 194, 232,0.10), rgba(58, 185, 227, 0.10), rgba(24, 184, 238, 0.15), rgb(110, 110, 233,0.35), rgb(0, 0, 127,0.65));
+}
+
+.about-section {
+  /* display: none; */
+  margin-top: 20vh;
+  margin-left: 25vw;
+  /* padding-left: 25vw; */
+  font-size: 20px;
+  color: rgb(0, 0, 127);
+}
+
+.about-section h2 {
+  padding-bottom: 2vh;
+  font-size: 40px;
+  border-bottom: 0.10rem solid rgb(0, 0, 127);
+}
+
+.about-section p {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  color: rgb(0, 0, 127,0.60);  
+}
+
+@keyframes blink-text {
+  0%{color:white;}
+  20%{color:rgb(173, 216, 230);}
+  40%{color:rgb(118, 200, 227);}
+  60%{color:rgb(60, 182, 223);}
+  80%{color: rgb(110, 110, 233);}
+  100%{color: rgb(0, 0, 127);}
+}
+
+.blink-text {
+  animation: blink-cursor 6s ease-in infinite;
+}
+
+
+/* PROJECTS Page Styles */
+
+/* MAIN Styles: Projects >>  */
+
+.main_projects {
+  min-height: 100vh;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+  padding-top: 1vh;
+  flex: 1 0 auto;
+  /* https://blog.hubspot.com/website/css-fade-in#text-transition */
+  /* animation: fadePage 10s;
+  animation-fill-mode: forwards; */
+  background-image: linear-gradient(to bottom right, rgb(240, 248, 255,1), rgb(173, 216, 230,0.15), rgb(81, 194, 232,0.10), rgba(58, 185, 227, 0.10), rgba(24, 184, 238, 0.15), rgb(110, 110, 233,0.35), rgb(0, 0, 127,0.65));
+}
+
+
+/* SITE NAV PROJECTS Styles >> */
+
+.site-navProjects {
+  margin-top: 20vh;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.site-navProjects #site-links {
+  display: none; /* Hides Navigation Menu until navMenuDisplay() is called */
+}
+
+.site-navProjects a {
+  display: block;
+  padding: 25px 20px;
+  text-decoration: none;
+  font-size: 40px;
+  /* color: rgb(175,238,238); */
+  color: rgb(110, 110, 233);
+}
+
+.site-navProjects a.icon {
+  background: black;
+  display: block;
+  /* position: absolute; */
+  float: right;
+  right: 0;
+  top: 0;
+}
+
+.site-navProjects a:hover {
+  /* background-color: pink; */
+  content: "";
+  width: 50%;
+  color: rgb(0, 0, 128);
+  font-size: 80px;
+  text-align: right;
+  border-bottom: 1rem solid rgb(0, 0, 128, 0.75);
+}
+
+
+/* SECTION Styles */
+
+.project {
+  margin-top: 10vh;
+  margin-bottom: 2vh;
+  margin-left: 5vw;
+  /* margin-right: 0vw; */
+  text-align: left;
+  font-size: 24px;
+  color: rgb(0, 0, 110);
+}
+
+.project-line {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  display: flex;
+  text-align: left;
+}
+
+.project-header {
+  width: 12vw;
+}
+
+.project-detail {
+  padding-top: 0.40vh;
+  white-space: pre;
+  color: rgb(0, 0, 110,0.75);
+  text-align: left;
+}
+
+
