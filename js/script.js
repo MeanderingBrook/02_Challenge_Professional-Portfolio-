@@ -1,29 +1,29 @@
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
 function homeReload() {
   location.reload();
 }
 
-function navMenuDisplay() {
+function navMenuDisplayHome() {
   var x = document.getElementById("site-links");
   var y = document.getElementById("dev-name");
 
-  var a = document.getElementById("about");
-  var p = document.getElementById("projects");
+  // var a = document.getElementById("about");
+  // var p = document.getElementById("projects");
   var c = document.getElementById("contact")  
 
   if (x.style.display === "block") {
     x.style.display = "none";
-    // y.classList.add("fade-in") /* https://www.w3schools.com/howto/howto_js_add_class.asp */
     y.style.display = "block";
-    a.style.display = "none";
-    p.style.display = "none";
+    // a.style.display = "none";
+    // p.style.display = "none";
     c.style.display = "none";
 
   } else {
     x.style.display = "block";
-    // y.className = " bounce"
     y.style.display = "none";
-    a.style.display = "none";
-    p.style.display = "none";
+    // a.style.display = "none";
+    // p.style.display = "none";
     c.style.display = "none";
   }
 }
@@ -76,6 +76,50 @@ function contactDisplay() {
     c.style.display = "block"
   } else {
     w.style.display = "block"
+    c.style.display = "none";
+  }
+}
+
+
+// ABOUT Page Scripts
+
+function navMenuDisplayAbout() {
+  var x = document.getElementById("site-links");
+  var y = document.getElementById("about");
+
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    y.style.display = "block";
+
+  } else {
+    x.style.display = "block";
+    y.style.display = "none";
+  }
+}
+
+
+// PROJECTS Page Scripts
+
+function navMenuDisplayProjects() {
+  var x = document.getElementById("site-links");
+  var y = document.getElementById("all-projects");
+
+  // var a = document.getElementById("about");
+  // var p = document.getElementById("projects");
+  var c = document.getElementById("contact")  
+
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    y.style.display = "block";
+    // a.style.display = "none";
+    // p.style.display = "none";
+    c.style.display = "none";
+
+  } else {
+    x.style.display = "block";
+    y.style.display = "none";
+    // a.style.display = "none";
+    // p.style.display = "none";
     c.style.display = "none";
   }
 }
