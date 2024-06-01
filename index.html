@@ -10,20 +10,19 @@
 </head>
 
 <body>
-
   <!-- HOME HEADER -->
   <header class="header">
     <!-- Paintbrush LOGO -->
     <div class="paintbrush">
       <a href="javascript:void(0);" onclick="homeReload()">
-        <img src="./assets/images/Paintbrush.png" alt="Paintbrush Swirling Paint" style="width:90px;height:60px;">
+        <img src="/assets/images/Paintbrush.png" alt="Paintbrush Swirling Paint" style="width:90px;height:60px;">
       </a>
     </div>
     <!-- HEADER Text -->
     <div>
       <h1><span style="color: rgb(0, 0, 127);">Product &nbsp; > &nbsp; Development &nbsp; | &nbsp; Management</span><span style="color: rgb(255, 255, 255);"> &nbsp; | &nbsp; Strategy &nbsp; | &nbsp; Finance</span></h1>
     </div>
-    <!-- NAV MENU (Hamburger) -->
+    <!-- NAV MENU ICON (Hamburger) -->
     <div class="trigger">
       <a href="javascript:void(0);" class="icon" onclick="navMenuDisplayHome()">
       <svg class="bars" viewBox="0 0 100 100" onclick="this.classList.toggle('active')">
@@ -35,26 +34,60 @@
     </div>
   </header>
 
-  <!-- <div class="banner-image" title="Abstract Pale Blue Waves">Background Image</div>   -->
-
   <main class="main_home">
-
+    <!-- DEV NAME and Qualifications Banner (Center of Page) -->
     <section class="home">
-      <div id="dev-name">
+      <div id="dev-name"> <!-- Required - 'Display: None' all Site Links and proper positioning -->
         <p>Chris Milazzo &nbsp;<span class="blink-cursor-1">></span> <span class="blink-cursor-2">></span> &nbsp;</p>
-        <div class="dev-summary">
+        <div class="dev-roles">
           <a href="javascript:void(0);" style="text-decoration:none" onclick="navMenuDisplayHome()">
-            <p> <span class="text-gradient fade-in-text-1"><b>Full-Stack</b> Developer</span><span class="text-gradient fade-in-text-1" style="opacity: 0;">.....</span> &nbsp; <!-- <span>&#8226;</span> &nbsp; -->
-                <span class="text-gradient fade-in-text-2" style="opacity:0"><b>Product</b> Manager</span><span class="text-gradient fade-in-text-2" style="opacity: 0;">.....</span> &nbsp; <!-- <span>&#8226;</span> &nbsp; -->
-                <span class="text-gradient fade-in-text-3" style="opacity:0"><b>Technology</b> Strategist</span><span class="text-gradient fade-in-text-3" style="opacity: 0;">.....</span> &nbsp; <!-- <span>&#8226;</span> &nbsp; -->
-                <span class="text-gradient fade-in-text-4" style="opacity:0"><b>Finance</b> Manager</span><span class="text-gradient fade-in-text-4" style="opacity: 0;">.....</span> &nbsp; <!-- <span>&#8226;</span> &nbsp; -->
+            <p> <span class="text-gradient fade-in-text-1"><b>Full-Stack</b> Developer</span><span class="text-gradient fade-in-text-1" style="opacity: 0;">.....</span> &nbsp;
+                <span class="text-gradient fade-in-text-2" style="opacity:0"><b>Product</b> Manager</span><span class="text-gradient fade-in-text-2" style="opacity: 0;">.....</span> &nbsp;
+                <span class="text-gradient fade-in-text-3" style="opacity:0"><b>Technology</b> Strategist</span><span class="text-gradient fade-in-text-3" style="opacity: 0;">.....</span> &nbsp;
+                <span class="text-gradient fade-in-text-4" style="opacity:0"><b>Finance</b> Manager</span><span class="text-gradient fade-in-text-4" style="opacity: 0;">.....</span> &nbsp;
                 <span class="text-gradient fade-in-text-5" style="opacity:0"><b>Program</b> Manager</span><span class="text-gradient fade-in-text-5" style="opacity: 0;">.....</span> &nbsp; 
+            </p>
+          </a>
+        </div>
+        <div class="dev-qualifications">
+          <a href="javascript:void(0);" style="text-decoration:none" onclick="navMenuDisplayHome()">
+            <p> <span class="text-gradient fade-in-text-10" style="opacity:0"><b>HTML</b></span><span class="text-gradient fade-in-text-10" style="opacity: 0;">.....</span> &nbsp;
+                <span class="text-gradient fade-in-text-11" style="opacity:0"><b>CSS</b></span><span class="text-gradient fade-in-text-11" style="opacity: 0;">.....</span> &nbsp;
+                <span class="text-gradient fade-in-text-12" style="opacity:0"><b>JavaScript</b></span><span class="text-gradient fade-in-text-12" style="opacity: 0;">.....</span> &nbsp;
+                <span class="text-gradient fade-in-text-13" style="opacity:0"><b>jQuery</b></span><span class="text-gradient fade-in-text-13" style="opacity: 0;">.....</span> &nbsp;
+                <span class="text-gradient fade-in-text-14" style="opacity:0"><b>Python</b></span><span class="text-gradient fade-in-text-14" style="opacity: 0;">.....</span> &nbsp;
+                <span class="text-gradient fade-in-text-15" style="opacity:0"><b>React</b></span><span class="text-gradient fade-in-text-15" style="opacity: 0;">.....</span> &nbsp;
+                <span class="text-gradient fade-in-text-16" style="opacity:0"><b>Node</b></span><span class="text-gradient fade-in-text-16" style="opacity: 0;">.....</span> &nbsp;
+                <span class="text-gradient fade-in-text-17" style="opacity:0"><b>MongoDB</b></span><span class="text-gradient fade-in-text-17" style="opacity: 0;">.....</span> &nbsp;
+                <span class="text-gradient fade-in-text-18" style="opacity:0"><b>Postman</b></span><span class="text-gradient fade-in-text-18" style="opacity: 0;">.....</span> &nbsp;
+            </p>
+          </a>
+        </div>
+        <div class="dev-applications">
+          <a href="javascript:void(0);" style="text-decoration:none" onclick="navMenuDisplayHome()">
+            <p> <span class="text-gradient fade-in-text-20" style="opacity:0"><b>macOS &#8226; Windows (Sigh)</b></span><span class="text-gradient fade-in-text-20" style="opacity: 0;">.....</span> &nbsp;
+                <span class="text-gradient fade-in-text-21" style="opacity:0"><b>VS Code</b></span><span class="text-gradient fade-in-text-21" style="opacity: 0;">.....</span> &nbsp;
+                <span class="text-gradient fade-in-text-22" style="opacity:0"><b>Project</b></span><span class="text-gradient fade-in-text-22" style="opacity: 0;">.....</span> &nbsp;
+                <span class="text-gradient fade-in-text-23" style="opacity:0"><b>Oracle Cloud</b></span><span class="text-gradient fade-in-text-23" style="opacity: 0;">.....</span> &nbsp;
+                <span class="text-gradient fade-in-text-24" style="opacity:0"><b>SAP</b></span><span class="text-gradient fade-in-text-24" style="opacity: 0;">.....</span> &nbsp;
+                <span class="text-gradient fade-in-text-25" style="opacity:0"><b>Office</b> </span><span class="text-gradient fade-in-text-25" style="opacity: 0;">.....</span> &nbsp;
+                <span class="text-gradient fade-in-text-26" style="opacity:0"><b>Tableau</b> </span><span class="text-gradient fade-in-text-26" style="opacity: 0;">.....</span> &nbsp;
+            </p>
+          </a>
+        </div>
+        <div class="dev-languages">
+          <a href="javascript:void(0);" style="text-decoration:none" onclick="navMenuDisplayHome()">
+            <p> <span class="text-gradient fade-in-text-30" style="opacity:0"><b>English</b></span><span class="text-gradient fade-in-text-30" style="opacity: 0;">.....</span> &nbsp;
+                <span class="text-gradient fade-in-text-31" style="opacity:0"><b>French</b></span><span class="text-gradient fade-in-text-31" style="opacity: 0;">.....</span> &nbsp;
+                <span class="text-gradient fade-in-text-32" style="opacity:0"><b>Italian</b></span><span class="text-gradient fade-in-text-32" style="opacity: 0;">.....</span> &nbsp;
+                <span class="text-gradient fade-in-text-33" style="opacity:0"><b>Russian</b></span><span class="text-gradient fade-in-text-33" style="opacity: 0;">.....</span> &nbsp;
             </p>
           </a>
         </div>
       </div>
     </section>
 
+    <!-- NAV MENU (Center of Page) -->
     <section class="site-nav">
       <div id="site-links">
         <div>
@@ -64,100 +97,35 @@
         </div>
 
         <div>
-          <!-- <a href="javascript:void(0);" onclick="aboutDisplay()"> -->
           <a href="/html/about.html">
             <p>About</p>
           </a>
         </div>
 
         <div>
-          <!-- <a href="javascript:void(0);" onclick="projectsDisplay()">
+          <a href="/html/projects.html">
             <p>Projects</p>
-          </a> -->
-          <a href="./html/projects.html">Projects</a>
+          </a>
         </div>
 
         <div>
-          <a href="./html/resume.html">Resume</a>
+          <a href="/html/resume.html">
+            <p>Resume</p>
+          </a>
         </div>
         
         <div>
-          <a href="javascript:void(0);" onclick="contactDisplay()">
+          <a href="/html/contact.html">
             <p>Contact</p>
           </a>
         </div>
       </div>      
     </section>
-
-    <section class="projects-section" id="projects">
-      <h3>Projects</h3>
-        <div>1 yadda yadda yadda</div>
-        <div>2 yadda yadda yadda</div>
-        <div>3 yadda yadda yadda</div>
-        <div>4 yadda yadda yadda</div>
-        <div>5 yadda yadda yadda</div>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <h3>Contact</h3>
-        <div>1 yadda yadda yadda</div>
-        <div>2 yadda yadda yadda</div>
-        <div>3 yadda yadda yadda</div>
-        <div>4 yadda yadda yadda</div>
-        <div>5 yadda yadda yadda</div>
-        <div>6 yadda yadda yadda</div>
-        <div>7 yadda yadda yadda</div>
-        <div>8 yadda yadda yadda</div>
-        <div>9 yadda yadda yadda</div>
-        <div>10 yadda yadda yadda</div>
-        <div>11 yadda yadda yadda</div>
-        <div>12 yadda yadda yadda</div>
-        <div>13 yadda yadda yadda</div>
-        <div>14 yadda yadda yadda</div>
-        <div>15 yadda yadda yadda</div>
-        <div>16 yadda yadda yadda</div>
-        <div>17 yadda yadda yadda</div>
-        <div>18 yadda yadda yadda</div>
-        <div>19 yadda yadda yadda</div>
-        <div>20 yadda yadda yadda</div>
-        <div>21 yadda yadda yadda</div>
-        <div>22 yadda yadda yadda</div>
-        <div>23 yadda yadda yadda</div>
-        <div>24 yadda yadda yadda</div>
-        <div>25 yadda yadda yadda</div>
-        <div>26 yadda yadda yadda</div>
-        <div>27 yadda yadda yadda</div>
-        <div>28 yadda yadda yadda</div>
-        <div>29 yadda yadda yadda</div>
-        <div>30 yadda yadda yadda</div>
-        <div>31 yadda yadda yadda</div>
-        <div>32 yadda yadda yadda</div>
-        <div>33 yadda yadda yadda</div>
-        <div>34 yadda yadda yadda</div>
-        <div>35 yadda yadda yadda</div>
-        <div>36 yadda yadda yadda</div>
-        <div>37 yadda yadda yadda</div>
-        <div>38 yadda yadda yadda</div>
-        <div>39 yadda yadda yadda</div>
-        <div>40 yadda yadda yadda</div>
-        <div>41 yadda yadda yadda</div>
-        <div>42 yadda yadda yadda</div>
-        <div>43 yadda yadda yadda</div>
-        <div>44 yadda yadda yadda</div>
-        <div>45 yadda yadda yadda</div>
-        <div>46 yadda yadda yadda</div>
-        <div>47 yadda yadda yadda</div>
-        <div>48 yadda yadda yadda</div>
-        <div>49 yadda yadda yadda</div>
-        <div>50 yadda yadda yadda</div>
-    </section>
-
   </main>
 
   <footer class="footer">
     <!-- https://stackoverflow.com/questions/28627060/insert-current-year-into-html -->
     <p>Copyright &copy; <span id="year"></span> Chris Milazzo</p>
   </footer>
-
 </body>
 </html>
