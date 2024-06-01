@@ -10,8 +10,11 @@ body {
   font-family: sans-serif;
   cursor: url('/assets/images/Cursor_Circle_Open.png'), auto;
   a:hover {
-    /* cursor: url('/assets/images/Cursor_Circle_Closed.png') 15 15, auto; https://css-tricks.com/almanac/properties/c/cursor/ */
-    cursor: url('/assets/images/Cursor_Third-Eye.png'), auto;
+    /* cursor: url('/assets/images/Cursor_Circle_Closed.png') 15 15, auto; */
+    cursor: url('/assets/images/Cursor_Third-Eye.png'), auto; /* https://css-tricks.com/almanac/properties/c/cursor/ */
+  }
+  input {
+    cursor: url('/assets/images/Cursor_Third-Eye.png'), auto; /* https://css-tricks.com/almanac/properties/c/cursor/ */
   }
 }
 
@@ -169,7 +172,34 @@ body {
   animation-delay: 2.5s;
 }
 
-.dev-summary {
+.dev-roles {
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 4vh;
+  margin-left: 0vw;
+  text-align: left;
+  font-size: 24px;
+}
+
+.dev-qualifications {
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 4vh;
+  margin-left: 0vw;
+  text-align: left;
+  font-size: 24px;
+}
+
+.dev-applications {
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 4vh;
+  margin-left: 0vw;
+  text-align: left;
+  font-size: 24px;
+}
+
+.dev-languages {
   white-space: nowrap;
   overflow: hidden;
   margin-top: 4vh;
@@ -197,6 +227,8 @@ body {
   100% { opacity: 0; }
 }
 
+/* dev-summary >>  */
+
 .fade-in-text-1 {
   animation: fadeIn 25s ease-in infinite;
 }
@@ -220,6 +252,122 @@ body {
   animation: fadeIn 25s ease-in infinite;
   animation-delay: 20s;
 }
+
+/* dev-qualifications >>  */
+
+.fade-in-text-10 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 52s;
+}
+
+.fade-in-text-11 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 58s;
+}
+
+.fade-in-text-12 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 10s;
+}
+
+.fade-in-text-13 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 16s;
+}
+
+.fade-in-text-14 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 22s;
+}
+
+.fade-in-text-15 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 28s;
+}
+
+.fade-in-text-16 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 34s;
+}
+
+.fade-in-text-17 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 40s;
+}
+
+.fade-in-text-18 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 46s;
+}
+
+/* dev-applications >>  */
+
+.fade-in-text-20 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 15s;
+}
+
+.fade-in-text-21 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 22s;
+}
+
+.fade-in-text-22 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 29s;
+}
+
+.fade-in-text-23 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 36s;
+}
+
+.fade-in-text-24 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 43s;
+}
+
+.fade-in-text-25 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 50s;
+}
+
+.fade-in-text-26 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 57s;
+}
+
+/* dev-languages >>  */
+
+.fade-in-text-30 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 45s;
+}
+
+.fade-in-text-31 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 57s;
+}
+
+.fade-in-text-32 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 69s;
+}
+
+.fade-in-text-33 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 33s;
+}
+
+/* .fade-in-text-34 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 39s;
+}
+
+.fade-in-text-35 {
+  animation: fadeIn 25s ease-in infinite;
+  animation-delay: 45s;
+} */
 
 /* .scroll-text {
   https://blog.hubspot.com/website/scrolling-text-css#:~:text=CSS%20Horizontal%20Scrolling%20Text%3A%20Right,and%20output%20are%20shown%20below.
@@ -255,12 +403,22 @@ body {
 }
 
 .site-nav a {
+  /* margin-top: -5vh; */
   display: block;
   padding: 25px 20px;
   text-decoration: none;
   font-size: 40px;
   color: rgb(110, 110, 233);
 }
+
+/* .site-navProjects a {
+  display: block;
+  padding: 25px 20px;
+  text-decoration: none;
+  font-size: 40px;
+  color: rgb(175,238,238);
+  color: rgb(110, 110, 233);
+} */
 
 .site-nav a.icon {
   background: black;
@@ -280,7 +438,7 @@ body {
 }
 
 
-/* DEPRECATED!!!! FOR INDIVIDUAL PAGES */
+/* DEPRECATED!!!! FOR INDIVIDUAL PAGES INSTEAD OF HOMEPAGE SECTIONS */
 .projects-section {
   display: none;
 }
@@ -315,9 +473,9 @@ body {
 }
 
 
-/* ABOUT Page Styles */
+/* ABOUT Page >> */
 
-/* MAIN Styles: About >>  */
+/* MAIN: About >>  */
 
 .main_about {
   min-height: 100vh;
@@ -325,28 +483,25 @@ body {
   margin-bottom: 3vh;
   padding-top: 1vh;
   flex: 1 0 auto;
-  /* https://blog.hubspot.com/website/css-fade-in#text-transition */
-  /* animation: fadePage 10s;
-  animation-fill-mode: forwards; */
   background-image: linear-gradient(to bottom right, rgb(240, 248, 255,1), rgb(173, 216, 230,0.15), rgb(81, 194, 232,0.10), rgba(58, 185, 227, 0.10), rgba(24, 184, 238, 0.15), rgb(110, 110, 233,0.35), rgb(0, 0, 127,0.65));
 }
 
-.about-section {
-  /* display: none; */
+/* SECTIONS: About >> */
+
+.about {
   margin-top: 20vh;
   margin-left: 25vw;
-  /* padding-left: 25vw; */
   font-size: 20px;
   color: rgb(0, 0, 127);
 }
 
-.about-section h2 {
+.about h2 {
   padding-bottom: 2vh;
   font-size: 40px;
   border-bottom: 0.10rem solid rgb(0, 0, 127);
 }
 
-.about-section p {
+.about p {
   margin-top: 3vh;
   margin-bottom: 3vh;
   color: rgb(0, 0, 127,0.60);  
@@ -365,10 +520,16 @@ body {
   animation: blink-cursor 6s ease-in infinite;
 }
 
+/* SITE NAV: About >> */
 
-/* PROJECTS Page Styles */
+.site-navAbout {
+  margin-top: 20vh;
+}
 
-/* MAIN Styles: Projects >>  */
+
+/* PROJECTS Page >> */
+
+/* MAIN: Projects >>  */
 
 .main_projects {
   min-height: 100vh;
@@ -376,69 +537,37 @@ body {
   margin-bottom: 3vh;
   padding-top: 1vh;
   flex: 1 0 auto;
-  /* https://blog.hubspot.com/website/css-fade-in#text-transition */
-  /* animation: fadePage 10s;
-  animation-fill-mode: forwards; */
   background-image: linear-gradient(to bottom right, rgb(240, 248, 255,1), rgb(173, 216, 230,0.15), rgb(81, 194, 232,0.10), rgba(58, 185, 227, 0.10), rgba(24, 184, 238, 0.15), rgb(110, 110, 233,0.35), rgb(0, 0, 127,0.65));
 }
 
+.project-pagetitle {
+  margin-top: 9vh;
+  margin-left: 7vw;
+  padding-bottom: 2vh;
+  font-size: 40px;
+  color: rgb(0, 0, 127);
+  border-bottom: 0.10rem solid rgb(0, 0, 127);
+}
 
-/* SITE NAV PROJECTS Styles >> */
+/* SITE NAV: Projects >> */
 
 .site-navProjects {
   margin-top: 20vh;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
 }
 
-.site-navProjects #site-links {
-  display: none; /* Hides Navigation Menu until navMenuDisplay() is called */
-}
-
-.site-navProjects a {
-  display: block;
-  padding: 25px 20px;
-  text-decoration: none;
-  font-size: 40px;
-  /* color: rgb(175,238,238); */
-  color: rgb(110, 110, 233);
-}
-
-.site-navProjects a.icon {
-  background: black;
-  display: block;
-  /* position: absolute; */
-  float: right;
-  right: 0;
-  top: 0;
-}
-
-.site-navProjects a:hover {
-  /* background-color: pink; */
-  content: "";
-  width: 50%;
-  color: rgb(0, 0, 128);
-  font-size: 80px;
-  text-align: right;
-  border-bottom: 1rem solid rgb(0, 0, 128, 0.75);
-}
-
-
-/* SECTION Styles */
+/* SECTIONS: Projects */
 
 .project {
-  margin-top: 10vh;
+  margin-top: 8vh;
   margin-bottom: 2vh;
-  margin-left: 5vw;
-  /* margin-right: 0vw; */
+  margin-left: 7vw;
   text-align: left;
   font-size: 24px;
   color: rgb(0, 0, 110);
 }
 
 .project-line {
-  margin-top: 1vh;
+  margin-top: 2vh;
   margin-bottom: 1vh;
   display: flex;
   text-align: left;
@@ -456,3 +585,152 @@ body {
 }
 
 
+/* RESUME Page >> */
+
+/* MAIN: Resume >>  */
+
+.main_resume {
+  min-height: 100vh;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+  padding-top: 1vh;
+  flex: 1 0 auto;
+  background-image: linear-gradient(to bottom right, rgb(240, 248, 255,1), rgb(173, 216, 230,0.15), rgb(81, 194, 232,0.10), rgba(58, 185, 227, 0.10), rgba(24, 184, 238, 0.15), rgb(110, 110, 233,0.35), rgb(0, 0, 127,0.65));
+}
+
+/* SITE NAV: Resume >> */
+
+.site-navResume {
+  margin-top: 20vh;
+}
+
+/* SECTIONS: Resume */
+
+.role {
+  margin-top: 10vh;
+  margin-bottom: 2vh;
+  margin-left: 5vw;
+  text-align: left;
+  font-size: 24px;
+  color: rgb(0, 0, 110);
+}
+
+.role-line {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  display: flex;
+  text-align: left;
+}
+
+.role-header {
+  width: 15vw;
+}
+
+.role-detail {
+  padding-top: 0.40vh;
+  white-space: pre;
+  color: rgb(0, 0, 110,0.75);
+  text-align: left;
+}
+
+
+/* CONTACT Page >> */
+
+/* MAIN: Contact >>  */
+
+.main_contact {
+  min-height: 100vh;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+  padding-top: 1vh;
+  flex: 1 0 auto;
+  background-image: linear-gradient(to bottom right, rgb(240, 248, 255,1), rgb(173, 216, 230,0.15), rgb(81, 194, 232,0.10), rgba(58, 185, 227, 0.10), rgba(24, 184, 238, 0.15), rgb(110, 110, 233,0.35), rgb(0, 0, 127,0.65));
+}
+
+/* SECTIONS: Contact >> */
+
+.contact {
+  margin-top: 20vh;
+  margin-left: 25vw;
+  font-size: 20px;
+  color: rgb(0, 0, 127);
+}
+
+.contact h2 {
+  padding-bottom: 2vh;
+  font-size: 40px;
+  border-bottom: 0.10rem solid rgb(0, 0, 127);
+}
+
+.contact-line {
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  display: flex;
+  text-align: left;
+}
+
+.contact-header {
+  width: 12vw;
+}
+
+.contact-detail {
+  padding-top: 0.40vh;
+  white-space: pre;
+  color: rgb(0, 0, 110,0.5);
+  text-align: left;
+}
+
+.contact a:link {
+  text-decoration: none;
+    color: rgb(0, 0, 110,0.5);
+}
+
+.contact a:visited {
+  text-decoration: none;
+  color: rgb(0, 0, 110,0.5);
+}
+
+/* CONTACT FORM: Contact */
+
+.contact-form {
+  margin-top: 4vh;
+  width: 50vw;
+  padding-top: 1.0vh;
+  padding-bottom: 3.0vh;
+  padding-left: 1.0vh;
+  /* padding-right: 1.0vh; */
+  /* display: flex; */
+  border: 0.05rem solid rgb(0, 0, 110,0.25);
+  border-radius: 1rem;
+  background-color: rgb(110, 110, 233,0.10);
+}
+
+.contact-form h3 {
+  margin-top: 1.0vh;
+  margin-bottom: 1.0vh;
+  text-align: center;
+}
+
+.form-label {
+  display: inline-block; 
+  margin-left: 1.0vw;
+  width: 10vw;
+  color: rgb(0, 0, 110,0.50);
+}
+
+.form-input {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  width: 35vw;
+  background-color: rgb(110, 110, 233,0.05);
+}
+
+.form-input::placeholder {
+  color: rgb(0, 0, 110,0.50);
+}
+
+/* SITE NAV: Contact >> */
+
+.site-navContact {
+  margin-top: 20vh;
+}
