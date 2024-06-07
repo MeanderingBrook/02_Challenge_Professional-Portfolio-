@@ -11,10 +11,12 @@ body {
   cursor: url('/assets/images/Cursor_Circle_Open.png'), auto;
   a:hover {
     /* cursor: url('/assets/images/Cursor_Circle_Closed.png') 15 15, auto; */
-    cursor: url('/assets/images/Cursor_Third-Eye.png'), auto; /* https://css-tricks.com/almanac/properties/c/cursor/ */
+    /* https://css-tricks.com/almanac/properties/c/cursor/ */
+    cursor: url('/assets/images/Cursor_Third-Eye.png'), auto; 
   }
   input {
-    cursor: url('/assets/images/Cursor_Third-Eye.png'), auto; /* https://css-tricks.com/almanac/properties/c/cursor/ */
+    /* https://css-tricks.com/almanac/properties/c/cursor/ */
+    cursor: url('/assets/images/Cursor_Third-Eye.png'), auto; 
   }
 }
 
@@ -31,15 +33,27 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 1vh;
-  background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(240, 248, 255, 1.0), rgb(173, 216, 230, 0.10), rgb(173, 216, 230, 0.25), rgb(110, 110, 233,0.50), rgb(110, 110, 233, 1.0), rgb(0, 0, 127, 1.0));
+  /* background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(240, 248, 255, 1.0), rgb(173, 216, 230, 0.10), rgb(173, 216, 230, 0.25), rgb(110, 110, 233,0.50), rgb(110, 110, 233, 1.0), rgb(0, 0, 127, 1.0)); */  /* Prior Transluscent Header */
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(240, 248, 255, 1.0), rgb(220, 216, 230, 1.0), rgb(210, 216, 230, 1.0), rgb(110, 110, 233,1.0), rgb(110, 110, 233, 1.0), rgb(0, 0, 127, 1.0));
   border-bottom: 1.0vh solid rgb(0, 0, 127);
   text-align: center;
 }
 
 .paintbrush {
   margin-left: 2.0vw;
-  /* border: 5px solid rgb(0, 0, 127); */
   box-shadow: 5px 2px 10px 10px rgb(246, 250, 253);
+}
+
+.headertext {
+  color: rgb(0, 0, 127);
+}
+
+@supports (background-clip: text) {
+  .headertext {
+    background-image: -webkit-linear-gradient(left, rgb(0, 0, 127), rgb(0, 0, 127), rgb(0, 0, 177), rgb(0, 0, 177), rgb(0, 0, 177), rgb(0, 0, 177), rgb(0, 0, 177), rgb(110, 110, 233), rgb(110, 110, 233), rgb(110, 110, 233), rgb(110, 110, 233), rgb(110, 110, 233), rgb(110, 110, 233), rgb(240, 248, 255), rgb(240, 248, 255), rgb(240, 248, 255), rgb(240, 248, 255), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 /* NAV ICON Animation >> */
@@ -69,7 +83,8 @@ body {
 
 .bars:hover {
   /* cursor: url('/assets/images/Cursor_Circle_Closed.png')15 15, auto; */
-  cursor: url('/assets/images/Cursor_Third-Eye.png') 5 5, auto; /* https://icons8.com/icon/set/pointing-triangle/group-ui */
+  /* https://icons8.com/icon/set/pointing-triangle/group-ui */
+  cursor: url('/assets/images/Cursor_Third-Eye.png') 5 5, auto; 
 }
 
 .active {
@@ -121,9 +136,24 @@ body {
   stroke: rgb(110, 110, 233);
 }
 
+/* FOOTER Styles >>  */
+
+.footer {
+  /* https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
+  /* https://css-tricks.com/couple-takes-sticky-footer/ */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 1vh;
+  width: 100%;
+  background-color: rgb(0, 0, 127);
+  color: white;
+  text-align: center;
+  border-top: 0.25vh solid aliceblue;
+}
+
 
 /* HOME Page Styles */
-
 /* MAIN Styles: Home >>  */
 
 .main_home {
@@ -132,16 +162,8 @@ body {
   margin-bottom: 3vh;
   padding-top: 1vh;
   flex: 1 0 auto;
-  /* https://blog.hubspot.com/website/css-fade-in#text-transition */
-  /* animation: fadePage 10s;
-  animation-fill-mode: forwards; */
   background-image: linear-gradient(to bottom right, rgb(240, 248, 255,1), rgb(173, 216, 230,0.15), rgb(81, 194, 232,0.10), rgba(58, 185, 227, 0.10), rgba(24, 184, 238, 0.15), rgb(110, 110, 233,0.35), rgb(0, 0, 127,0.65));
 }
-
-/* @keyframes fadePage {
-  from { background-image: white; }
-  to { background-image: linear-gradient(to bottom right, rgb(240, 248, 255,1), rgb(173, 216, 230,0.10), rgb(81, 194, 232,0.10), rgba(58, 185, 227, 0.15), rgba(24, 184, 238, 0.25), rgb(110, 110, 233,0.40), rgb(0, 0, 127,0.65)); }
-} */
 
 .home {
   margin-top: 20vh;
@@ -359,37 +381,6 @@ body {
   animation-delay: 33s;
 }
 
-/* .fade-in-text-34 {
-  animation: fadeIn 25s ease-in infinite;
-  animation-delay: 39s;
-}
-
-.fade-in-text-35 {
-  animation: fadeIn 25s ease-in infinite;
-  animation-delay: 45s;
-} */
-
-/* .scroll-text {
-  https://blog.hubspot.com/website/scrolling-text-css#:~:text=CSS%20Horizontal%20Scrolling%20Text%3A%20Right,and%20output%20are%20shown%20below.
-} */
-
-/* .bounce {
-  animation: bounce 1s ease-in infinite;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-100px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-
 /* SITE NAV Styles >> */
 
 .site-nav {
@@ -411,15 +402,6 @@ body {
   color: rgb(110, 110, 233);
 }
 
-/* .site-navProjects a {
-  display: block;
-  padding: 25px 20px;
-  text-decoration: none;
-  font-size: 40px;
-  color: rgb(175,238,238);
-  color: rgb(110, 110, 233);
-} */
-
 .site-nav a.icon {
   background: black;
   display: block;
@@ -438,43 +420,7 @@ body {
 }
 
 
-/* DEPRECATED!!!! FOR INDIVIDUAL PAGES INSTEAD OF HOMEPAGE SECTIONS */
-.projects-section {
-  display: none;
-}
-
-.projects-section h2 {
-  font-size: 40px;
-}
-
-.contact-section {
-  display: none;
-}
-
-.contact-section h2 {
-  font-size: 40px;
-}
-
-
-/* FOOTER Styles >>  */
-
-.footer {
-  /* https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
-  /* https://css-tricks.com/couple-takes-sticky-footer/ */
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  padding: 1vh;
-  width: 100%;
-  background-color: rgb(0, 0, 127);
-  color: white;
-  text-align: center;
-  border-top: 0.25vh solid aliceblue;
-}
-
-
 /* ABOUT Page >> */
-
 /* MAIN: About >>  */
 
 .main_about {
@@ -528,7 +474,6 @@ body {
 
 
 /* PROJECTS Page >> */
-
 /* MAIN: Projects >>  */
 
 .main_projects {
@@ -540,20 +485,21 @@ body {
   background-image: linear-gradient(to bottom right, rgb(240, 248, 255,1), rgb(173, 216, 230,0.15), rgb(81, 194, 232,0.10), rgba(58, 185, 227, 0.10), rgba(24, 184, 238, 0.15), rgb(110, 110, 233,0.35), rgb(0, 0, 127,0.65));
 }
 
-.project-pagetitle {
-  margin-top: 9vh;
-  margin-left: 7vw;
-  padding-bottom: 2vh;
-  font-size: 40px;
-  color: rgb(0, 0, 127);
-  border-bottom: 0.10rem solid rgb(0, 0, 127);
+.projects {
+  margin-top: 10vh;
+  margin-bottom: 2vh;
+  margin-left: 5vw;
+  text-align: left;
+  font-size: 24px;
+  color: rgb(0, 0, 110);
 }
 
-/* SITE NAV: Projects >> */
-
-.site-navProjects {
-  margin-top: 20vh;
+.projectimg {
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: row;
 }
+
 
 /* SECTIONS: Projects */
 
@@ -584,9 +530,68 @@ body {
   text-align: left;
 }
 
+.imgcolumn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vh;
+}
+
+#codingnotesimg {
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  margin-left: 0vw;
+  margin-right: 0.50vw;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(110, 110, 233);
+  width: 1000px; 
+  height: 570px;
+}
+
+#escapemanorimg {
+  margin-top: 0vh;
+  margin-bottom: 0.5vh;
+  margin-left: 0vw;
+  margin-right: 0vw;
+  border-style: solid;
+  border-width: 5px;
+  border-color: darkorange;
+  width: 500px; 
+  height: 300px;
+}
+
+#emppayrollimg {
+  margin-top: 0vh; 
+  margin-bottom: 1vh;
+  margin-left: 0vw;
+  margin-right: 0vw;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(0, 0, 127);
+  width: 500px; 
+  height: 250px;
+}
+
+#codingnotes {
+  min-height: 5vh;
+}
+
+#escapemanor {
+  min-height: 5vh;
+}
+
+#emppayroll {
+  min-height: 5vh;
+}
+
+/* SITE NAV: Projects >> */
+
+.site-navProjects {
+  margin-top: 20vh;
+}
+
 
 /* RESUME Page >> */
-
 /* MAIN: Resume >>  */
 
 .main_resume {
@@ -635,7 +640,6 @@ body {
 
 
 /* CONTACT Page >> */
-
 /* MAIN: Contact >>  */
 
 .main_contact {
@@ -698,8 +702,6 @@ body {
   padding-top: 1.0vh;
   padding-bottom: 3.0vh;
   padding-left: 1.0vh;
-  /* padding-right: 1.0vh; */
-  /* display: flex; */
   border: 0.05rem solid rgb(0, 0, 110,0.25);
   border-radius: 1rem;
   background-color: rgb(110, 110, 233,0.10);

@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
   <link rel="icon" type="image/x-icon" href="../assets/images/Paintbrush.png">
-  <script src="/js/script.js"></script>
   <title>Milazzo | Projects</title>
 </head>
 
@@ -36,48 +35,93 @@
 
   <main class="main_projects">
     <!-- PROJECTS Inventory -->
-    <section id="projects"> <!-- Required - 'Display: None' all Site Links and proper positioning -->
-      <h2 class="project-pagetitle">Projects</h2>
+      <!-- Required - 'Display: None' all Site Links and proper Element positioning -->
+      <section class="projects" id="projects">
+        <h4>Projects</h4>
 
-      <section class="project">
-        <section class="project-line">
-          <h3 class="project-header">Project Name: &nbsp;</h3>
-          <h4 class="project-detail">Coding Notes - A Learning Tool</h4>
+        <!-- PROJECTS Images -->
+        <section class="projectimg">
+          <a href="#codingnotes">
+            <img id="codingnotesimg" src="/assets/images/Coding_Notes_Homepage.png" alt="Coding Notes Homepage" title="Coding Notes Homepage">
+          </a>
+          <section class="imgcolumn">
+            <a href="#escapemanor">
+              <img id="escapemanorimg" src="/assets/images/Escape_Manor_Doom_Screenshot_Skull-Splash.png" alt="Escape from the Manor of Doom Game Splash Image Grinning Skull" title="Escape from the Manor of Doom Game Splash Image Grinning Skull">
+            </a>
+            <a href="#emppayroll">
+              <img id="emppayrollimg" src="/assets/images/Employee Payroll Tracker_Screenshot-01.png" alt="Employee Payroll Tracker Homepage" title="Employee Payroll Tracker Homepage">
+            </a>
+          </section>
         </section>
-        <section class="project-line">
-          <h3 class="project-header">Description: &nbsp;</h3>
-          <div class="project-detail">The Coding Notes site is an online, interactive tool for recording coding techniques, tips, and resources. 
+
+        <!-- PROJECTS Details -->
+        <section>
+          <!-- <div> to hold Project ID centering Project Description on page when navigating from associated image -->
+          <div id="codingnotes"></div>
+          <section class="project">
+            <section class="project-line">
+              <h3 class="project-header">Project Name: &nbsp;</h3>
+              <h4 class="project-detail">Coding Notes - A Learning Tool</h4>
+            </section>
+            <section class="project-line">
+              <h3 class="project-header">Description: &nbsp;</h3>
+              <div class="project-detail">The Coding Notes site is an online, interactive tool for recording coding techniques, tips, and resources. 
 The site uses Mongo to store User-created Notes, as well as Notes contextual information, such as the 
-Programming Language for which a Note is related.</div>
-        </section>
-        <section class="project-line">
-          <h3 class="project-header">GitHub Repo: &nbsp;</h3>
-          <p class="project-detail">https://github.com/MeanderingBrook/coding_notes.git</p>
-        </section>
-        <section class="project-line">
-          <h3 class="project-header">Screenshot: &nbsp;</h3>
-          <p class="project-detail"><img src="/assets/images/Coding_Notes_Homepage.png" alt="Coding Notes Homepage" style="width: 600px; height: 300px;"></p>
-        </section>
-      </section>
+Programming Language for which a Note is related.
+              </div>
+            </section>
+            <section class="project-line">
+              <h3 class="project-header">GitHub Repo: &nbsp;</h3>
+              <p class="project-detail">https://github.com/MeanderingBrook/coding_notes.git</p>
+            </section>
+          </section>
 
-      <section class="project">
-        <h2>Project 2</h2>
-        <p>blah blah blah</p>
-      </section>
+          <!-- <div> to hold Project ID centering Project Description on page when navigating from associated image -->
+          <div id="escapemanor""></div> 
+          <section class="project">
+            <section class="project-line">
+              <h3 class="project-header">Project Name: &nbsp;</h3>
+              <h4 class="project-detail">Escape the Manor of Doom!: A Python-Based Text Adventure</h4> 
+            </section>
+            <section class="project-line">
+              <h3 class="project-header">Description: &nbsp;</h3>
+              <div class="project-detail">Escape from the Manor of Doom is a Python-based, console text adventure for one Player.
+Through the Player's computer terminal, the Player will explore an ancient manor filled with Monsters, Treaure, and... Death!
+Python 3 is required to run the game.
+Can you successfully penetrate the Manor of Doom and live?!
+              </div>
+            </section>
+            <section class="project-line">
+              <h3 class="project-header">GitHub Repo: &nbsp;</h3>
+              <p class="project-detail">https://github.com/MeanderingBrook/Escape_Manor_of_Doom.git</p>
+            </section>
+          </section>
 
-      <section class="project">
-        <h2>Project 3</h2>
-        <p>blah blah blah</p>
+          <!-- NOTE: Use of Bootcamp Challenge Project as demonstration placeholder, only, for the assignment submission, not credited to Student for public view -->
+          <!-- <div> to hold Project ID centering Project Description on page when navigating from associated image -->
+          <div id="emppayroll""></div> 
+          <section class="project">
+            <section class="project-line">
+              <h3 class="project-header">Project Name: &nbsp;</h3>
+              <h4 class="project-detail">PLACEHOLDER FOR ASSIGNMENT ONLY -- Employee Payroll Tracker: A Data Management Webapp </h4>
+            </section>
+            <section class="project-line">
+              <h3 class="project-header">Description: &nbsp;</h3>
+              <div class="project-detail">The Employee Payroll Tracker is a web-based, browser-accessible application that enables 
+a Payroll Manager (User) to view and manage Employee Payroll Data. The app dynamically updates the web-app
+HTML and CSS code to ingest, analyze, and report User-input data, using JavaScript code.
+              </div>
+            </section>
+            <section class="project-line">
+              <h3 class="project-header">GitHub Repo: &nbsp;</h3>
+              <p class="project-detail">https://github.com/MeanderingBrook/03_Challenge_Employee-Payroll-Tracker.git</p>
+            </section>
+          </section>
+        </section>
       </section>
-
-      <section class="project">
-        <h2>Project 4</h2>
-        <p>blah blah blah</p>
-      </section>
-    </section>
 
     <!-- NAV MENU (Center of Page) -->
-    <section class="site-nav site-navProjects">
+    <section class="site-nav site-navResume">
       <div id="site-links">
         <div>
           <a href="/index.html">
@@ -114,7 +158,8 @@ Programming Language for which a Note is related.</div>
 
   <footer class="footer">
     <!-- https://stackoverflow.com/questions/28627060/insert-current-year-into-html -->
-    <p>Copyright &copy; <span id="year"></span> Chris Milazzo</p>
+    <p>&copy; <span id="year"></span> Chris Milazzo</p>
   </footer>
+  <script src="/js/script.js"></script>
 </body>
 </html>
