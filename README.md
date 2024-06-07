@@ -1,119 +1,94 @@
-# Standard Readme
-
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-
-A standard style for README files
-
-Your README file is normally the first entry point to your code. It should tell people why they should use your module, how they can install it, and how they can use it. Standardizing how you write your README makes creating and maintaining your READMEs easier. Great documentation takes work!
-
-This repository contains:
-
-1. [The specification](spec.md) for how a standard README should look.
-2. A link to [a linter](https://github.com/RichardLitt/standard-readme-preset) you can use to keep your README maintained ([work in progress](https://github.com/RichardLitt/standard-readme/issues/5)).
-3. A link to [a generator](https://github.com/RichardLitt/generator-standard-readme) you can use to create standard READMEs.
-4. [A badge](#badge) to point to this spec.
-5. [Examples of standard READMEs](example-readmes/) - such as this file you are reading.
-
-Standard Readme is designed for open source libraries. Although it’s [historically](#background) made for Node and npm projects, it also applies to libraries in other languages and package managers.
-
+# Full-Stack Developer Bootcamp Module 02 - Challenge: Professional Portfolio
 
 ## Table of Contents
 
 - [Background](#background)
 - [Install](#install)
 - [Usage](#usage)
-	- [Generator](#generator)
+- [Generator](#generator)
 - [Badge](#badge)
-- [Example Readmes](#example-readmes)
+- [Credit and Source Code](#credits-and-code-source)
 - [Related Efforts](#related-efforts)
 - [Maintainers](#maintainers)
 - [Contributing](#contributing)
 - [License](#license)
+- [Tests](#tests)
+- [Application Screenshots](#application-screenshots) 
+
 
 ## Background
 
-Standard Readme started with the issue originally posed by [@maxogden](https://github.com/maxogden) over at [feross/standard](https://github.com/feross/standard) in [this issue](https://github.com/feross/standard/issues/141), about whether or not a tool to standardize readmes would be useful. A lot of that discussion ended up in [zcei's standard-readme](https://github.com/zcei/standard-readme/issues/1) repository. While working on maintaining the [IPFS](https://github.com/ipfs) repositories, I needed a way to standardize Readmes across that organization. This specification started as a result of that.
+The Professional Portfolio is a web-based, browser-accessible site that provides an overview of the professional experience of Chris Milazzo.
 
-> Your documentation is complete when someone can use your module without ever
-having to look at its code. This is very important. This makes it possible for
-you to separate your module's documented interface from its internal
-implementation (guts). This is good because it means that you are free to
-change the module's internals as long as the interface remains the same.
+the Portfolio site includes a brief experiencial overview (About), a summary of Web Development Projects (Projects), and a synopsis of professional experience (Resume).
 
-> Remember: the documentation, not the code, defines what a module does.
+The Portfolio site is modern-browser compliant, and utlizes light JavaScript code to provide functonality.
 
-~ [Ken Williams, Perl Hackers](http://mathforum.org/ken/perl_modules.html#document)
-
-Writing READMEs is way too hard, and keeping them maintained is difficult. By offloading this process - making writing easier, making editing easier, making it clear whether or not an edit is up to spec or not - you can spend less time worrying about whether or not your initial documentation is good, and spend more time writing and using code.
-
-By having a standard, users can spend less time searching for the information they want. They can also build tools to gather search terms from descriptions, to automatically run example code, to check licensing, and so on.
-
-The goals for this repository are:
-
-1. A well defined **specification**. This can be found in the [Spec document](spec.md). It is a constant work in progress; please open issues to discuss changes.
-2. **An example README**. This Readme is fully standard-readme compliant, and there are more examples in the `example-readmes` folder.
-3. A **linter** that can be used to look at errors in a given Readme. Please refer to the [tracking issue](https://github.com/RichardLitt/standard-readme/issues/5).
-4. A **generator** that can be used to quickly scaffold out new READMEs. See [generator-standard-readme](https://github.com/RichardLitt/generator-standard-readme).
-5. A **compliant badge** for users. See [the badge](#badge).
 
 ## Install
 
-This project uses [node](http://nodejs.org) and [npm](https://npmjs.com). Go check them out if you don't have them locally installed.
+The project uses HTML, CSS, and JavaScript code, and is fully-functional with any modern browser.
 
-```sh
-$ npm install --global standard-readme-spec
-```
+No additional installations, beyond a browser with JavaScript enabled, is required.
+
+Enhanced visual functionality is available for webkit-based browsers.
+
 
 ## Usage
 
-This is only a documentation package. You can print out [spec.md](spec.md) to your console:
+The Portfolio is a publically-available website intended to provide information regarding the professional experience and qualifications of Chris Milazzo.
 
-```sh
-$ standard-readme-spec
-# Prints out the standard-readme spec
-```
 
-### Generator
+## Generator
 
-To use the generator, look at [generator-standard-readme](https://github.com/RichardLitt/generator-standard-readme). There is a global executable to run the generator in that package, aliased as `standard-readme`.
+N / A
+
 
 ## Badge
 
-If your README is compliant with Standard-Readme and you're on GitHub, it would be great if you could add the badge. This allows people to link back to this Spec, and helps adoption of the README. The badge is **not required**.
+N / A
 
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-To add in Markdown format, use this code:
+## Credits and Code Source
 
-```
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-```
+Code, where referenced from a third-party Source, is noted in Comments accompanying the relevant Code lines (e.g., style.css, Line 13)
 
-## Example Readmes
-
-To see how the specification has been applied, see the [example-readmes](example-readmes/).
 
 ## Related Efforts
 
-- [Art of Readme](https://github.com/noffle/art-of-readme) - 💌 Learn the art of writing quality READMEs.
-- [open-source-template](https://github.com/davidbgk/open-source-template/) - A README template to encourage open-source contributions.
+N / A
+
 
 ## Maintainers
 
-[@RichardLitt](https://github.com/RichardLitt).
+N / A
+
 
 ## Contributing
 
-Feel free to dive in! [Open an issue](https://github.com/RichardLitt/standard-readme/issues/new) or submit PRs.
-
-Standard Readme follows the [Contributor Covenant](http://contributor-covenant.org/version/1/3/0/) Code of Conduct.
-
-### Contributors
-
-This project exists thanks to all the people who contribute. 
-<a href="https://github.com/RichardLitt/standard-readme/graphs/contributors"><img src="https://opencollective.com/standard-readme/contributors.svg?width=890&button=false" /></a>
+N / A
 
 
 ## License
 
 [MIT](LICENSE) © Chris Milazzo
+
+
+## Tests
+
+N / A
+
+
+## Application Screenshots
+
+![Professional Portfolio: Homepage Screenshot] (/assets/images/Professional-Portfolio_Screenshot_Home.png "Professional Portfolio Screenshot - Homepage")
+
+![Professional Portfolio: Navigation Menu] (/assets/images/Professional-Portfolio_Screenshot_Nav-Menu.png "Professional Portfolio Screenshot - Navigation Menu")
+
+![Professional Portfolio: About Page] (/assets/images/Professional-Portfolio_Screenshot_About.png "Professional Portfolio Screenshot - About Page")
+
+![Professional Portfolio: Projects Page] (/assets/images/Professional-Portfolio_Screenshot_Projects.png "Professional Portfolio Screenshot - Projects Page")
+
+![Professional Portfolio: Resume Page] (/assets/images/Professional-Portfolio_Screenshot_Resume.png "Professional Portfolio Screenshot - Resume Page")
+
+![Professional Portfolio: Contact Page] (/assets/images/Professional-Portfolio_Screenshot_Contact.png "Professional Portfolio Screenshot - Contact Page")
