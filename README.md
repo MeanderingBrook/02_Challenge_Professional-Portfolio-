@@ -21,7 +21,7 @@
 
 The Professional Portfolio is a web-based, browser-accessible site that provides an overview of the professional experience of Chris Milazzo.
 
-the Portfolio site includes a brief experiencial overview (About), a summary of Web Development Projects (Projects), and a synopsis of professional experience (Resume).
+the Portfolio site includes a brief experiencial overview (About), a summary of Web Development Projects (Projects), a synopsis of professional experience (Resume), and Contact page with Developer email and (inactive) Contact Form (Contact).
 
 The Portfolio site is modern-browser compliant, and utlizes light JavaScript code to provide functonality.
 
