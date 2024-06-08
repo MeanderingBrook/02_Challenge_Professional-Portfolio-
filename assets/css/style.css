@@ -10,9 +10,10 @@ body {
   font-family: sans-serif;
   cursor: url('/assets/images/Cursor_Circle_Open.png'), auto;
   a:hover {
-    /* cursor: url('/assets/images/Cursor_Circle_Closed.png') 15 15, auto; */
     /* https://css-tricks.com/almanac/properties/c/cursor/ */
-    cursor: url('/assets/images/Cursor_Third-Eye.png'), auto; 
+    cursor: url('/assets/images/Cursor_Third-Eye.png'), auto;
+    /* Superseded by pointing (triangular) custom cursor */
+    /* cursor: url('/assets/images/Cursor_Circle_Closed.png') 15 15, auto; */ 
   }
   input {
     /* https://css-tricks.com/almanac/properties/c/cursor/ */
@@ -186,12 +187,12 @@ body {
 }
 
 .blink-cursor-1 {
-  animation: blink-cursor 5s ease-in infinite;
+  animation: blink-cursor 10s ease-in-out infinite;
+  animation-delay: 7.5s;
 }
 
 .blink-cursor-2 {
-  animation: blink-cursor 5s ease-in infinite;
-  animation-delay: 2.5s;
+  animation: blink-cursor 10s ease-in-out infinite;
 }
 
 .dev-roles {
@@ -390,11 +391,11 @@ body {
 }
 
 .site-nav #site-links {
-  display: none; /* Hides Navigation Menu until navMenuDisplay() is called */
+  /* Hides Navigation Menu until navMenuDisplay() is called */
+  display: none; 
 }
 
 .site-nav a {
-  /* margin-top: -5vh; */
   display: block;
   padding: 25px 20px;
   text-decoration: none;
@@ -494,10 +495,112 @@ body {
   color: rgb(0, 0, 110);
 }
 
+.projects h2 {
+  padding-bottom: 2vh;
+  font-size: 40px;
+  border-bottom: 0.10rem solid rgb(0, 0, 127);
+}
+
 .projectimg {
   margin-top: 3vh;
   display: flex;
   flex-direction: row;
+}
+
+.imgcontainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.imgtext-codingnotes {
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+  border-top: solid;
+  border-bottom: solid;
+  border-right: solid;
+  border-width: 5px;
+  border-color: rgb(110, 110, 233);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(0, 0, 127,0.75);
+}
+
+.imgtext-manordoom {
+  position: absolute;
+  bottom: 40px;
+  right: 0px;
+  border-top: solid;
+  border-bottom: solid;
+  border-left: solid;
+  border-width: 5px;
+  border-color: rgb(255, 140, 0);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(165, 42, 42,1.0);
+}
+
+.imgtext-emppayroll {
+  position: absolute;
+  bottom: 80px;
+  right: 0px;
+  border-top: solid;
+  border-bottom: solid;
+  border-left: solid;
+  border-width: 5px;
+  border-color: rgb(0, 0, 127);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(110, 110, 233);
+}
+
+.imgcolumn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vh;
+}
+
+#codingnotesimg {
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  margin-left: 0vw;
+  margin-right: 0.50vw;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(110, 110, 233);
+  width: 1000px; 
+  height: 570px;
+}
+
+#escapemanorimg {
+  margin-top: 0vh;
+  margin-bottom: 0.5vh;
+  margin-left: 0vw;
+  margin-right: 0vw;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(255, 140, 0);
+  width: 500px; 
+  height: 300px;
+}
+
+#emppayrollimg {
+  margin-top: 0vh; 
+  margin-bottom: 1vh;
+  margin-left: 0vw;
+  margin-right: 0vw;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(0, 0, 127);
+  width: 500px; 
+  height: 250px;
 }
 
 
@@ -530,47 +633,6 @@ body {
   text-align: left;
 }
 
-.imgcolumn {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2vh;
-}
-
-#codingnotesimg {
-  margin-top: 2vh;
-  margin-bottom: 1vh;
-  margin-left: 0vw;
-  margin-right: 0.50vw;
-  border-style: solid;
-  border-width: 5px;
-  border-color: rgb(110, 110, 233);
-  width: 1000px; 
-  height: 570px;
-}
-
-#escapemanorimg {
-  margin-top: 0vh;
-  margin-bottom: 0.5vh;
-  margin-left: 0vw;
-  margin-right: 0vw;
-  border-style: solid;
-  border-width: 5px;
-  border-color: darkorange;
-  width: 500px; 
-  height: 300px;
-}
-
-#emppayrollimg {
-  margin-top: 0vh; 
-  margin-bottom: 1vh;
-  margin-left: 0vw;
-  margin-right: 0vw;
-  border-style: solid;
-  border-width: 5px;
-  border-color: rgb(0, 0, 127);
-  width: 500px; 
-  height: 250px;
-}
 
 #codingnotes {
   min-height: 5vh;
@@ -729,6 +791,16 @@ body {
 
 .form-input::placeholder {
   color: rgb(0, 0, 110,0.50);
+}
+
+.form-submit {
+  margin-top: 2vh;
+  margin-left: 22vw;
+  width: 5vw;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(127, 127, 255);
+  color: rgb(255, 255, 255);
 }
 
 /* SITE NAV: Contact >> */
