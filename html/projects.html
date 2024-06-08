@@ -37,20 +37,44 @@
     <!-- PROJECTS Inventory -->
       <!-- Required - 'Display: None' all Site Links and proper Element positioning -->
       <section class="projects" id="projects">
-        <h4>Projects</h4>
+        <h2>Projects</h2>
 
         <!-- PROJECTS Images -->
         <section class="projectimg">
-          <a href="#codingnotes">
-            <img id="codingnotesimg" src="/assets/images/Coding_Notes_Homepage.png" alt="Coding Notes Homepage" title="Coding Notes Homepage">
-          </a>
+          <!-- IMAGE: Coding Notes -->
+          <!-- https://www.w3schools.com/howto/howto_css_image_text.asp -->
+          <div class="imgcontainer">
+            <a href="#codingnotes">
+              <img id="codingnotesimg" src="/assets/images/Coding_Notes_Homepage.png" alt="Coding Notes Homepage" title="Coding Notes Homepage">
+            </a>
+            <div class="imgtext-codingnotes">
+              <p>Coding Notes</p>
+              <p style="margin-top: 10px; font-size: 12px"">Express JS MongoDB</p>
+            </div>
+          </div>
+
           <section class="imgcolumn">
-            <a href="#escapemanor">
-              <img id="escapemanorimg" src="/assets/images/Escape_Manor_Doom_Screenshot_Skull-Splash.png" alt="Escape from the Manor of Doom Game Splash Image Grinning Skull" title="Escape from the Manor of Doom Game Splash Image Grinning Skull">
-            </a>
-            <a href="#emppayroll">
-              <img id="emppayrollimg" src="/assets/images/Employee Payroll Tracker_Screenshot-01.png" alt="Employee Payroll Tracker Homepage" title="Employee Payroll Tracker Homepage">
-            </a>
+            <!-- IMAGE: Manor of Doom -->
+            <div class="imgcontainer">
+              <a href="#escapemanor">
+                <img id="escapemanorimg" src="/assets/images/Escape_Manor_Doom_Screenshot_Skull-Splash.png" alt="Escape from the Manor of Doom Game Splash Image Grinning Skull" title="Escape from the Manor of Doom Game Splash Image Grinning Skull">
+              </a>
+              <div class="imgtext-manordoom">
+                <p style="font-size: 18px">Manor of Doom</p>
+                <p style="margin-top: 10px; font-size: 12px"">Python</p>
+              </div>
+            </div>
+
+            <!-- IMAGE: Employee Payroll -->
+            <div class="imgcontainer">
+              <a href="#emppayroll">
+                <img id="emppayrollimg" src="/assets/images/Employee Payroll Tracker_Screenshot-01.png" alt="Employee Payroll Tracker Homepage" title="Employee Payroll Tracker Homepage">
+              </a>
+              <div class="imgtext-emppayroll">
+                <p style="font-size: 18px">Employee Payroll</p>
+                <p style="margin-top: 10px; font-size: 12px">HTML CSS JS</p>
+              </div>
+            </div>
           </section>
         </section>
 
@@ -65,14 +89,15 @@
             </section>
             <section class="project-line">
               <h3 class="project-header">Description: &nbsp;</h3>
-              <div class="project-detail">The Coding Notes site is an online, interactive tool for recording coding techniques, tips, and resources. 
+              <div class="project-detail">The Coding Notes site is a web-based, browser-native interactive tool for recording coding techniques, tips, and resources. 
 The site uses Mongo to store User-created Notes, as well as Notes contextual information, such as the 
 Programming Language for which a Note is related.
               </div>
             </section>
             <section class="project-line">
               <h3 class="project-header">GitHub Repo: &nbsp;</h3>
-              <p class="project-detail">https://github.com/MeanderingBrook/coding_notes.git</p>
+              <p class="project-detail"><a href="https://github.com/MeanderingBrook/coding_notes.git" target="_blank" rel="noopener noreferrer">https://github.com/MeanderingBrook/coding_notes.git</a>
+              </p>
             </section>
           </section>
 
@@ -85,15 +110,16 @@ Programming Language for which a Note is related.
             </section>
             <section class="project-line">
               <h3 class="project-header">Description: &nbsp;</h3>
-              <div class="project-detail">Escape from the Manor of Doom is a Python-based, console text adventure for one Player.
-Through the Player's computer terminal, the Player will explore an ancient manor filled with Monsters, Treaure, and... Death!
-Python 3 is required to run the game.
+              <div class="project-detail">Escape from the Manor of Doom is a downloadable Python-based, console text adventure for one Player.
+Through the Player's local terminal, the Player will explore an ancient manor filled with Monsters, Treaure, and... Death!
 Can you successfully penetrate the Manor of Doom and live?!
+(Note: Python 3 is required to run the game, after download.)
               </div>
             </section>
             <section class="project-line">
               <h3 class="project-header">GitHub Repo: &nbsp;</h3>
-              <p class="project-detail">https://github.com/MeanderingBrook/Escape_Manor_of_Doom.git</p>
+              <p class="project-detail"><a href="https://github.com/MeanderingBrook/Escape_Manor_of_Doom.git" target="_blank" rel="noopener noreferrer">https://github.com/MeanderingBrook/Escape_Manor_of_Doom.git</a>
+              </p>
             </section>
           </section>
 
@@ -107,14 +133,20 @@ Can you successfully penetrate the Manor of Doom and live?!
             </section>
             <section class="project-line">
               <h3 class="project-header">Description: &nbsp;</h3>
-              <div class="project-detail">The Employee Payroll Tracker is a web-based, browser-accessible application that enables 
+              <div class="project-detail">The Employee Payroll Tracker is a web-based, browser-native application that enables 
 a Payroll Manager (User) to view and manage Employee Payroll Data. The app dynamically updates the web-app
 HTML and CSS code to ingest, analyze, and report User-input data, using JavaScript code.
               </div>
             </section>
             <section class="project-line">
               <h3 class="project-header">GitHub Repo: &nbsp;</h3>
-              <p class="project-detail">https://github.com/MeanderingBrook/03_Challenge_Employee-Payroll-Tracker.git</p>
+              <p class="project-detail"><a href="https://github.com/MeanderingBrook/03_Challenge_Employee-Payroll-Tracker.git" target="_blank" rel="noopener noreferrer">https://github.com/MeanderingBrook/03_Challenge_Employee-Payroll-Tracker.git</a>
+              </p>
+            </section>
+            <section class="project-line">
+              <h3 class="project-header">GitHub Pages: &nbsp;</h3>
+              <p class="project-detail"><a href="https://meanderingbrook.github.io/03_Challenge_Employee-Payroll-Tracker" target="_blank" rel="noopener noreferrer">https://meanderingbrook.github.io/03_Challenge_Employee-Payroll-Tracker</a>
+              </p>
             </section>
           </section>
         </section>
@@ -156,6 +188,7 @@ HTML and CSS code to ingest, analyze, and report User-input data, using JavaScri
     </section>
   </main>
 
+  <!-- FOOTER (Fixed Position) -->
   <footer class="footer">
     <!-- https://stackoverflow.com/questions/28627060/insert-current-year-into-html -->
     <p>&copy; <span id="year"></span> Chris Milazzo</p>
