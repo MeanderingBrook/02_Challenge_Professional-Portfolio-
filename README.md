@@ -87,14 +87,14 @@ https://meanderingbrook.github.io/02_Challenge_Professional-Portfolio-/
 
 ## Application Screenshots
 
-![Professional Portfolio: Homepage Screenshot] (/assets/images/Professional-Portfolio_Screenshot_Home.png "Professional Portfolio Screenshot - Homepage")
+![Professional Portfolio: Homepage Screenshot](./assets/images/Professional-Portfolio_Screenshot_Home.png "Professional Portfolio Screenshot - Homepage")
 
-![Professional Portfolio: Navigation Menu] (/assets/images/Professional-Portfolio_Screenshot_Nav-Menu.png "Professional Portfolio Screenshot - Navigation Menu")
+![Professional Portfolio: Navigation Menu](./assets/images/Professional-Portfolio_Screenshot_Nav-Menu.png "Professional Portfolio Screenshot - Navigation Menu")
 
-![Professional Portfolio: About Page] (/assets/images/Professional-Portfolio_Screenshot_About.png "Professional Portfolio Screenshot - About Page")
+![Professional Portfolio: About Page](./assets/images/Professional-Portfolio_Screenshot_About.png "Professional Portfolio Screenshot - About Page")
 
-![Professional Portfolio: Projects Page] (/assets/images/Professional-Portfolio_Screenshot_Projects.png "Professional Portfolio Screenshot - Projects Page")
+![Professional Portfolio: Projects Page](./assets/images/Professional-Portfolio_Screenshot_Projects.png "Professional Portfolio Screenshot - Projects Page")
 
-![Professional Portfolio: Resume Page] (/assets/images/Professional-Portfolio_Screenshot_Resume.png "Professional Portfolio Screenshot - Resume Page")
+![Professional Portfolio: Resume Page](./assets/images/Professional-Portfolio_Screenshot_Resume.png "Professional Portfolio Screenshot - Resume Page")
 
-![Professional Portfolio: Contact Page] (/assets/images/Professional-Portfolio_Screenshot_Contact.png "Professional Portfolio Screenshot - Contact Page")
+![Professional Portfolio: Contact Page](./assets/images/Professional-Portfolio_Screenshot_Contact.png "Professional Portfolio Screenshot - Contact Page")
